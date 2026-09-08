@@ -88,6 +88,17 @@
   <div class="wrap">Academic Exchange Forum — a UPSA student initiative.</div>
 </footer>
 
+<div class="quiz-overlay" id="quiz-overlay">
+  <div class="quiz-card">
+    <div class="quiz-top">
+      <div class="quiz-title" id="quiz-title"></div>
+      <button class="quiz-close" onclick="closeQuiz()" aria-label="Close quiz">×</button>
+    </div>
+    <div class="quiz-progress"><div class="quiz-progress-bar" id="quiz-progress-bar"></div></div>
+    <div class="quiz-body" id="quiz-body"></div>
+  </div>
+</div>
+
 <script src="data.js"></script>
 <script>
 function showTab(id){
@@ -120,12 +131,111 @@ function renderCategory(cat){
         ${item.week ? `<span>${escapeHtml(item.week)}</span>` : ''}
         ${item.date ? `<span>${escapeHtml(item.date)}</span>` : ''}
         ${item.link ? `<a href="${escapeHtml(item.link)}" target="_blank" rel="noopener">Open material →</a>` : ''}
+        ${item.quizId ? `<a href="#" onclick="startQuiz('${item.quizId}');return false;">Take the quiz →</a>` : ''}
       </div>
     </div>
   `).join('');
 }
 
 ['weekly','notes','exercises','past'].forEach(renderCategory);
+
+// ===================== Interactive Quiz =====================
+let quizState = null;
+
+function startQuiz(quizId){
+  const quiz = (typeof QUIZZES !== 'undefined') ? QUIZZES[quizId] : null;
+  if(!quiz){ alert('Quiz not found.'); return; }
+  quizState = { quiz, index: 0, score: 0, answered: false, chosen: null };
+  document.getElementById('quiz-title').textContent = quiz.title;
+  document.getElementById('quiz-overlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  renderQuizQuestion();
+}
+
+function closeQuiz(){
+  document.getElementById('quiz-overlay').classList.remove('open');
+  document.body.style.overflow = '';
+  quizState = null;
+}
+
+function renderQuizQuestion(){
+  const { quiz, index } = quizState;
+  const total = quiz.questions.length;
+  const pct = Math.round((index / total) * 100);
+  document.getElementById('quiz-progress-bar').style.width = pct + '%';
+
+  if(index >= total){
+    renderQuizResults();
+    return;
+  }
+
+  const q = quiz.questions[index];
+  quizState.answered = false;
+  quizState.chosen = null;
+
+  const body = document.getElementById('quiz-body');
+  body.innerHTML = `
+    <div class="quiz-qnum">Question ${index + 1} of ${total}</div>
+    <div class="quiz-question">${escapeHtml(q.q)}</div>
+    <div class="quiz-options" id="quiz-options">
+      ${q.options.map((opt, i) => `
+        <button class="quiz-option" data-i="${i}" onclick="chooseAnswer(${i})">${escapeHtml(opt)}</button>
+      `).join('')}
+    </div>
+    <div class="quiz-feedback" id="quiz-feedback"></div>
+    <div class="quiz-actions">
+      <button class="btn btn-navy" id="quiz-next-btn" onclick="nextQuizQuestion()" disabled>Next</button>
+    </div>
+  `;
+}
+
+function chooseAnswer(i){
+  if(quizState.answered) return;
+  quizState.answered = true;
+  quizState.chosen = i;
+  const q = quizState.quiz.questions[quizState.index];
+  const correct = i === q.correct;
+  if(correct) quizState.score++;
+
+  document.querySelectorAll('.quiz-option').forEach((btn, idx) => {
+    btn.classList.add('locked');
+    if(idx === q.correct) btn.classList.add('correct');
+    else if(idx === i) btn.classList.add('incorrect');
+  });
+
+  const fb = document.getElementById('quiz-feedback');
+  fb.innerHTML = (correct ? '<span class="fb-correct">Correct.</span> ' : '<span class="fb-incorrect">Not quite.</span> ')
+    + escapeHtml(q.explain || '');
+  fb.classList.add('show');
+
+  document.getElementById('quiz-next-btn').disabled = false;
+}
+
+function nextQuizQuestion(){
+  quizState.index++;
+  renderQuizQuestion();
+}
+
+function renderQuizResults(){
+  document.getElementById('quiz-progress-bar').style.width = '100%';
+  const { quiz, score } = quizState;
+  const total = quiz.questions.length;
+  const pct = Math.round((score / total) * 100);
+  let msg = "Solid — you've got this.";
+  if(pct < 50) msg = "Worth another pass through the material before you move on.";
+  else if(pct < 80) msg = "Good grasp — a quick review will lock it in.";
+
+  document.getElementById('quiz-body').innerHTML = `
+    <div class="quiz-results">
+      <div class="quiz-score">${score} / ${total}</div>
+      <div class="quiz-score-msg">${msg}</div>
+      <div class="quiz-actions">
+        <button class="btn btn-navy" onclick="startQuiz('${Object.keys(QUIZZES).find(k => QUIZZES[k] === quiz)}')">Retake quiz</button>
+        <button class="btn btn-outline-dark" onclick="closeQuiz()">Close</button>
+      </div>
+    </div>
+  `;
+}
 </script>
 
 </body>
