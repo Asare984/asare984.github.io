@@ -1,15 +1,3 @@
-// ============================================================
-// ACADEMIC EXCHANGE FORUM — content file
-// ============================================================
-// To add new material: copy one of the { ... } blocks below,
-// paste it inside the right category's array, fill in your
-// details, and save. Then re-upload / push this file.
-//
-// category must be one of: "weekly", "notes", "exercises", "past"
-// date format: "MMM D, YYYY"  e.g. "Sep 5, 2026"
-// link is optional — paste a Google Drive / WhatsApp / PDF link
-// ============================================================
-
 const MATERIALS = {
 
   weekly: [
@@ -23,15 +11,15 @@ const MATERIALS = {
     }
   ],
 
-  notes: [{
-  title: "BCPC 305 — Principles of Leadership: Course Overview & Study Guide",
-  course: "BCPC305",
-  week: "",
-  date: "Sep 8, 2026",
-  desc: "Full syllabus explained — objectives, all 12 weeks, assessment breakdown, and reading list.",
-  link: "https://asare984.github.io/academic-exchange-forum/BCPC305_Course_Overview_AEF.pdf"
-},
-
+  notes: [
+    {
+      title: "BCPC 305 — Principles of Leadership: Course Overview & Study Guide",
+      course: "BCPC305",
+      week: "",
+      date: "Sep 8, 2026",
+      desc: "Full syllabus explained — objectives, all 12 weeks, assessment breakdown, and reading list.",
+      link: "https://asare984.github.io/BCPC305_Course_Overview_AEF.pdf"
+    },
     {
       title: "Example: Business Statistics — simplified guide",
       course: "BCPC112",
