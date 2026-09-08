@@ -23,7 +23,15 @@ const MATERIALS = {
     }
   ],
 
-  notes: [
+  notes: [{
+  title: "BCPC 305 — Principles of Leadership: Course Overview & Study Guide",
+  course: "BCPC305",
+  week: "",
+  date: "Sep 8, 2026",
+  desc: "Full syllabus explained — objectives, all 12 weeks, assessment breakdown, and reading list.",
+  link: "https://asare984.github.io/academic-exchange-forum/BCPC305_Course_Overview_AEF.pdf"
+},
+
     {
       title: "Example: Business Statistics — simplified guide",
       course: "BCPC112",
