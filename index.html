@@ -26,6 +26,7 @@
 <nav>
   <div class="wrap">
     <button data-tab="weekly" class="active" onclick="showTab('weekly')">This Week</button>
+    <button data-tab="quizzes" onclick="showTab('quizzes')">Quizzes</button>
     <button data-tab="notes" onclick="showTab('notes')">Notes</button>
     <button data-tab="exercises" onclick="showTab('exercises')">Exercises</button>
     <button data-tab="past" onclick="showTab('past')">Past Questions</button>
@@ -39,6 +40,16 @@
     <div class="section-head"><h2>This week's drop</h2></div>
     <div class="section-sub">Fresh quizzes and materials for the week, newest first.</div>
     <div id="list-weekly"></div>
+  </section>
+
+  <section id="quizzes">
+    <div class="section-head"><h2 id="quiz-view-title">Quizzes by course</h2></div>
+    <div class="section-sub" id="quiz-view-sub">Tap a course to see every week's quiz, in order.</div>
+    <div id="quiz-course-list"></div>
+    <div id="quiz-week-list" class="hidden">
+      <button class="quiz-back" onclick="showCourseList()">← All courses</button>
+      <div id="quiz-week-items"></div>
+    </div>
   </section>
 
   <section id="notes">
@@ -138,6 +149,59 @@ function renderCategory(cat){
 }
 
 ['weekly','notes','exercises','past'].forEach(renderCategory);
+
+// ===================== Course quiz browser =====================
+function renderCourseList(){
+  const el = document.getElementById('quiz-course-list');
+  const codes = (typeof COURSES !== 'undefined') ? Object.keys(COURSES) : [];
+  if(codes.length === 0){
+    el.innerHTML = '<div class="empty">No course quizzes posted yet.</div>';
+    return;
+  }
+  el.innerHTML = codes.map(code => {
+    const course = COURSES[code];
+    const count = course.quizzes.length;
+    return `
+      <div class="item course-card" onclick="showCourseQuizzes('${code}')">
+        <div class="item-top">
+          <div class="item-title">${escapeHtml(course.name)}</div>
+          <div class="item-course">${escapeHtml(code)}</div>
+        </div>
+        <div class="item-desc">${count} quiz${count === 1 ? '' : 'zes'} available — tap to see them week by week.</div>
+      </div>
+    `;
+  }).join('');
+}
+
+function showCourseQuizzes(code){
+  const course = COURSES[code];
+  if(!course) return;
+  document.getElementById('quiz-course-list').classList.add('hidden');
+  document.getElementById('quiz-week-list').classList.remove('hidden');
+  document.getElementById('quiz-view-title').textContent = course.name;
+  document.getElementById('quiz-view-sub').textContent = code + ' — tap a week to take that quiz.';
+
+  const itemsEl = document.getElementById('quiz-week-items');
+  itemsEl.innerHTML = course.quizzes.map(q => `
+    <div class="item">
+      <div class="item-top">
+        <div class="item-title">${escapeHtml(q.week)} — ${escapeHtml(q.title)}</div>
+      </div>
+      <div class="item-meta">
+        <a href="#" onclick="startQuiz('${q.quizId}');return false;">Take the quiz →</a>
+      </div>
+    </div>
+  `).join('');
+}
+
+function showCourseList(){
+  document.getElementById('quiz-week-list').classList.add('hidden');
+  document.getElementById('quiz-course-list').classList.remove('hidden');
+  document.getElementById('quiz-view-title').textContent = 'Quizzes by course';
+  document.getElementById('quiz-view-sub').textContent = "Tap a course to see every week's quiz, in order.";
+}
+
+renderCourseList();
 
 // ===================== Interactive Quiz =====================
 let quizState = null;
