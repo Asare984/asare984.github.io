@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BCPC 305 Principles of Leadership: Simplified Notes | Academic Exchange Forum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1a2342; --navy-2:#2a3563; --gold:#d6a23a; --gold-soft:#f6e9c8;
+  --ink:#1f2433; --muted:#5d6475; --paper:#fbfaf7; --line:#e2dfd6; --card:#ffffff;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans:"Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65}
+a{color:var(--navy-2)}
+header.top{background:var(--navy);color:#fff;padding:28px 20px 26px}
+.wrap{max-width:760px;margin:0 auto}
+header.top .brand{font-family:var(--serif);font-size:15px;color:var(--gold);margin:0 0 10px}
+header.top h1{font-family:var(--serif);font-size:clamp(26px,6vw,38px);line-height:1.15;margin:0 0 10px;font-weight:700}
+header.top p{margin:0;color:#d8dcee;max-width:56ch}
+nav.weeks{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line)}
+nav.weeks .wrap{display:flex;gap:6px;overflow-x:auto;padding:10px 16px;scrollbar-width:none}
+nav.weeks .wrap::-webkit-scrollbar{display:none}
+nav.weeks a{flex:0 0 auto;text-decoration:none;color:var(--muted);font-size:15px;font-weight:500;padding:6px 12px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+nav.weeks a.on{background:var(--navy);border-color:var(--navy);color:#fff}
+main{padding:8px 20px 60px}
+.how{background:var(--gold-soft);border-left:4px solid var(--gold);padding:14px 16px;margin:24px 0 8px;border-radius:0 6px 6px 0;font-size:16px}
+.how p{margin:0 0 6px}.how p:last-child{margin:0}
+section.week{padding-top:34px;border-top:1px solid var(--line);margin-top:34px}
+section.week:first-of-type{border-top:0;margin-top:10px}
+.wk{font-size:15px;color:var(--muted);margin:0 0 2px;font-weight:600}
+h2{font-family:var(--serif);font-size:clamp(24px,5.5vw,32px);line-height:1.2;margin:0 0 12px;color:var(--navy)}
+h3{font-family:var(--serif);font-size:21px;margin:30px 0 8px;color:var(--navy)}
+h4{font-size:17px;margin:20px 0 4px;color:var(--navy-2)}
+p{margin:0 0 14px}
+.short{font-size:18px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:0 0 6px}
+ul,ol{padding-left:22px;margin:0 0 14px}
+li{margin-bottom:6px}
+.tbl{overflow-x:auto;margin:0 0 16px;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:480px;font-size:16px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#f0eee7;font-weight:600;color:var(--navy)}
+tr:last-child td{border-bottom:0}
+.eg{border-left:3px solid var(--navy-2);padding:2px 0 2px 14px;margin:0 0 14px;color:#2e3550}
+.eg b{color:var(--navy)}
+.remember{background:var(--navy);color:#fff;border-radius:8px;padding:16px 18px;margin:24px 0 14px}
+.remember strong{font-family:var(--serif);color:var(--gold);display:block;margin-bottom:4px;font-size:18px}
+.remember ul{margin:6px 0 0}.remember li{margin-bottom:4px}
+.check{border:1px solid var(--line);background:var(--card);border-radius:8px;margin:0 0 10px}
+.check summary{cursor:pointer;padding:12px 16px;font-weight:600;color:var(--navy);list-style:none}
+.check summary::-webkit-details-marker{display:none}
+.check summary::before{content:"+";display:inline-block;width:22px;color:var(--gold);font-weight:700}
+.check[open] summary::before{content:"\2212"}
+.check .ans{padding:0 16px 14px 38px;color:#2e3550}
+.check summary:focus-visible,nav.weeks a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.qhead{font-family:var(--serif);font-size:19px;color:var(--navy);margin:26px 0 10px}
+footer{background:var(--navy);color:#cfd4ea;text-align:center;padding:22px 20px;font-size:15px}
+footer b{color:var(--gold);font-family:var(--serif)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <p class="brand">Academic Exchange Forum, a UPSA student initiative</p>
+    <h1>BCPC 305: Principles of Leadership</h1>
+    <p>Simplified notes for every week of the course, written in plain language with examples and short self-checks.</p>
+  </div>
+</header>
+
+<nav class="weeks" aria-label="Weeks">
+  <div class="wrap">
+    <a href="#week-1">Wk 1 Foundations</a>
+    <a href="#week-2">Wk 2 Theories</a>
+    <a href="#week-3">Wk 3 Contingency</a>
+    <a href="#week-4">Wk 4 Practice &amp; Governance</a>
+    <a href="#week-5">Wk 5 Trust &amp; Power</a>
+    <a href="#week-6">Wk 6 Traditional</a>
+    <a href="#week-7">Wk 7 Styles &amp; Skills</a>
+    <a href="#week-9">Wk 9 Decisions</a>
+    <a href="#week-10">Wk 10 Teams &amp; Crisis</a>
+    <a href="#week-11">Wk 11 Ethics</a>
+  </div>
+</nav>
+
+<main>
+<div class="wrap">
+
+<div class="how">
+  <p><b>How to use these notes.</b> Read the "In short" box first, then the detail. Tap each question at the end of a week to test yourself before you look at the answer.</p>
+  <p>The Interim Assessment (Week 8) covers Weeks 1 to 7. The final exam has 20 multiple-choice questions, then 4 essay questions of which you answer 3.</p>
+</div>
+
+<!-- ============ WEEK 1 ============ -->
+<section class="week" id="week-1">
+  <p class="wk">Week 1</p>
+  <h2>Foundations of Leadership</h2>
+  <p class="short"><b>In short:</b> Leadership is one person influencing a group of people so they reach a goal together. It happens at four levels, it has clear functions, and it is not the same thing as management.</p>
+
+  <h3>What is leadership?</h3>
+  <p>Scholars define it differently, but the ideas agree. Leadership is a <b>process</b> (it happens over time, between people), not just a personality or a job title. Some definitions in your slides:</p>
+  <ul>
+    <li><b>Northouse:</b> a process where one person influences a group to achieve a common goal.</li>
+    <li><b>Kouzes and Posner:</b> a relationship between those who aspire to lead and those who choose to follow.</li>
+    <li><b>Rauch and Behling:</b> influencing the activities of an organised group towards goal achievement.</li>
+  </ul>
+  <p>Northouse says almost every definition has four parts: <b>process, influence, group context and goal attainment</b>. Lussier and Achua list six elements: organisational objectives, people, process, influence, change, and leaders and followers.</p>
+  <p class="eg"><b>Example:</b> A course rep who gets the class to agree on a date for a group assignment and makes sure everyone submits is leading. There is a process (discussion), influence (persuading), a group (the class) and a goal (submission).</p>
+
+  <h3>Levels of leadership</h3>
+  <div class="tbl"><table>
+    <tr><th>Level</th><th>What it means</th></tr>
+    <tr><td>Personal</td><td>Leading yourself: discipline, integrity and growth. Others learn from how you behave.</td></tr>
+    <tr><td>Direct (group)</td><td>Leading a team towards a shared goal. The leader coordinates, motivates and settles disputes.</td></tr>
+    <tr><td>Organisational / managerial</td><td>Influencing the performance of the whole organisation. Needs technical, social, conceptual and spiritual competence.</td></tr>
+    <tr><td>Strategic</td><td>Looking far ahead, seeing big opportunities, gathering resources and creating value for society. Needs vision, courage, resilience and discipline.</td></tr>
+  </table></div>
+
+  <h3>Functions of a leader</h3>
+  <ul>
+    <li>Inspire a shared vision.</li>
+    <li>Create followers who become leaders themselves.</li>
+    <li>Bring constructive change that serves the long-term needs of everyone involved.</li>
+    <li>Solve problems and settle conflicts.</li>
+    <li>Gather the resources needed to achieve the vision.</li>
+  </ul>
+
+  <h3>Leadership vs management</h3>
+  <div class="tbl"><table>
+    <tr><th>Management</th><th>Leadership</th></tr>
+    <tr><td>Doing things right (efficiency)</td><td>Doing the right things (effectiveness)</td></tr>
+    <tr><td>Plans, organises, directs, controls</td><td>Sets vision, inspires, coaches, empowers</td></tr>
+    <tr><td>Short-term view, asks "how and when"</td><td>Long-term view, asks "what and why"</td></tr>
+    <tr><td>Accepts the status quo</td><td>Challenges the status quo</td></tr>
+    <tr><td>Position comes from time and loyalty in the organisation</td><td>People follow by their own choice</td></tr>
+  </table></div>
+  <p>They overlap. Leadership is one part of the directing function of management, and a manager also needs formal authority to be effective.</p>
+
+  <div class="remember"><strong>Remember this</strong>
+    <ul><li>Leadership = influence + group + shared goal, as a process.</li><li>Four levels: personal, direct, organisational, strategic.</li><li>Management is doing things right. Leadership is doing the right things.</li></ul>
+  </div>
+
+  <p class="qhead">Check yourself</p>
+  <details class="check"><summary>Define leadership and name the four components Northouse identified.</summary><div class="ans">Leadership is a process in which an individual influences a group to achieve a common goal. The four components are process, influence, group context and goal attainment.</div></details>
+  <details class="check"><summary>Give two differences between a leader and a manager.</summary><div class="ans">A manager asks "how and when", keeps to the status quo and takes a short-term view. A leader asks "what and why", challenges the status quo and takes a long-term view.</div></details>
+</section>
+
+<!-- ============ WEEK 2 ============ -->
+<section class="week" id="week-2">
+  <p class="wk">Week 2</p>
+  <h2>Theories of Leadership</h2>
+  <p class="short"><b>In short:</b> A theory is a framework that helps explain why some people become leaders and what makes them effective. This week covers five: Great Man, Trait, Managerial Grid, Pygmalion and Golem.</p>
+
+  <h3>Why do we study theories?</h3>
+  <p>A theory is a set of ideas that explains something. A leadership theory explains why and how certain people become leaders, and which traits, behaviours and situations make leaders effective.</p>
+
+  <h3>1. Great Man Theory</h3>
+  <p>The oldest idea: <b>leaders are born, not made.</b> It became popular in the 19th century. People believed great leaders such as Abraham Lincoln and Julius Caesar had natural, inborn abilities that ordinary people did not have.</p>
+  <p><b>Criticism:</b> Herbert Spencer argued that leaders are shaped by the society and times they live in. It also ignores the fact that leadership skills can be learnt.</p>
+
+  <h3>2. Trait Theory</h3>
+  <p>The next step: instead of "great men", look at the <b>traits</b> (steady patterns of behaviour, like confidence or persistence) that leaders share. Researchers such as Stogdill, Kirkpatrick and Locke, and Zaccaro compiled lists of traits.</p>
+  <p>The core traits that keep appearing:</p>
+  <ul>
+    <li><b>Intelligence:</b> leaders tend to be higher in reasoning and problem solving.</li>
+    <li><b>Integrity:</b> honesty and doing what you say you will do.</li>
+    <li><b>Sociability:</b> seeking good relationships with people.</li>
+    <li><b>Self-confidence, drive and persistence:</b> believing in yourself and staying with the goal.</li>
+  </ul>
+  <p><b>Criticisms (a favourite exam topic):</b></p>
+  <ul>
+    <li>No single list of traits works for every leader, and the lists keep growing.</li>
+    <li>The choice of "important" traits is subjective, based on each author's views.</li>
+    <li>It ignores the situation. Height and weight may matter in the army but not in a business.</li>
+    <li>Many people have the traits yet never lead.</li>
+  </ul>
+  <p>The <b>Leadership Trait Questionnaire (LTQ)</b> measures traits such as being articulate, perceptive, confident, persistent and empathic. You and five people who know you rate yourself from 1 to 5.</p>
+
+  <h3>3. Managerial (Leadership) Grid</h3>
+  <p>Developed by <b>Blake and Mouton (1964)</b>. It rates a leader on two things, each from 1 (low) to 9 (high): <b>concern for production</b> (tasks, results) and <b>concern for people</b> (needs, welfare). Together they give five styles.</p>
+  <div class="tbl"><table>
+    <tr><th>Style (production, people)</th><th>What it looks like</th></tr>
+    <tr><td>Impoverished (1,1)</td><td>Cares about neither. Avoids responsibility. Low morale, poor results.</td></tr>
+    <tr><td>Country Club (1,9: low production, high people)</td><td>Friendly and comfortable, but little gets done.</td></tr>
+    <tr><td>Task / Authority-Compliance (9,1: high production, low people)</td><td>Strict and result-driven. Workers feel like tools, leading to burnout and turnover.</td></tr>
+    <tr><td>Middle-of-the-Road (5,5)</td><td>Tries to balance both. Peace is kept but results are only average.</td></tr>
+    <tr><td>Team / Sound (9,9)</td><td>High concern for both. Best style: teamwork, high morale and high performance.</td></tr>
+  </table></div>
+  <p class="eg"><b>Example:</b> A school principal who never supervises because she wants teachers comfortable is Country Club. A factory supervisor who pushes quotas without thinking about tired workers is Task management.</p>
+
+  <h3>4. Pygmalion effect</h3>
+  <p><b>High expectations lead to high performance.</b> If a leader truly believes a person can do well, the leader gives more encouragement, bigger tasks and better feedback. The person gains confidence and performs better, which confirms the belief. This is a <i>self-fulfilling prophecy</i>.</p>
+  <p class="eg"><b>Example:</b> A lecturer who believes a student is bright gives him challenging work and attention, and his results improve.</p>
+  <p>To use it: set high but realistic expectations, show belief in people, give constructive feedback and avoid labelling anyone as "weak" or "slow".</p>
+
+  <h3>5. Golem effect</h3>
+  <p>The opposite. <b>Low expectations lead to poor performance.</b> A leader who doubts someone gives them only routine tasks, watches them closely and ignores their ideas. The person loses confidence, performs poorly, and may even leave.</p>
+
+  <h3>The five at a glance</h3>
+  <div class="tbl"><table>
+    <tr><th>Theory</th><th>Core idea</th></tr>
+    <tr><td>Great Man</td><td>Leaders are born with natural abilities.</td></tr>
+    <tr><td>Trait</td><td>Certain personality traits make effective leaders.</td></tr>
+    <tr><td>Managerial Grid</td><td>Style depends on balance of concern for people vs production.</td></tr>
+    <tr><td>Pygmalion</td><td>High expectations produce high performance.</td></tr>
+    <tr><td>Golem</td><td>Low expectations produce poor performance.</td></tr>
+  </table></div>
+
+  <div class="remember"><strong>Remember this</strong>
+    <ul><li>Great Man = born. Trait = qualities. Grid = people vs production. Pygmalion = high expectation up. Golem = low expectation down.</li><li>Best grid style is Team Management (9,9).</li><li>Leadership is both an art and a science, and it can be developed.</li></ul>
+  </div>
+
+  <p class="qhead">Check yourself</p>
+  <details class="check"><summary>State two criticisms of Trait Theory.</summary><div class="ans">There is no universal list of traits that fits every leader, and the choice of traits is subjective. It also ignores the situation, and many people with the traits never become leaders.</div></details>
+  <details class="check"><summary>What is the difference between the Pygmalion and Golem effects?</summary><div class="ans">Under Pygmalion, a leader's high expectations raise a person's performance. Under Golem, a leader's low expectations lower it. Both are self-fulfilling prophecies.</div></details>
+  <details class="check"><summary>Which grid style has high concern for production but low concern for people?</summary><div class="ans">Task (Authority-Compliance) management. It gets short-term output but causes dissatisfaction, conflict and high staff turnover.</div></details>
+</section>
+
+<!-- ============ WEEK 3 ============ -->
+<section class="week" id="week-3">
+  <p class="wk">Week 3</p>
+  <h2>Contingency Theories of Leadership</h2>
+  <p class="short"><b>In short:</b> "Contingency" means "it depends". No single leadership style works everywhere. The best style depends on the situation. Three theories: Fiedler, Hersey and Blanchard, and Path-Goal.</p>
+
+  <h3>Why contingency theories came about</h3>
+  <p>Trait theories said leaders are born. Behavioural theories said one style (autocratic, democratic or laissez-faire) is best. Experience showed both were incomplete. A democratic leader can fail in a crisis, and a strict leader can fail with skilled, motivated staff. So scholars in the 1960s added the <b>situation</b>.</p>
+
+  <h3>1. Fiedler's Contingency Theory (1967)</h3>
+  <p>Fiedler says leader effectiveness depends on matching the <b>leader's style</b> with how <b>favourable the situation</b> is. His big assumption: a leader's style is <b>fixed</b>. You cannot easily change it, so you should place the leader in the right situation.</p>
+  <h4>Step 1: find the leader's style (LPC scale)</h4>
+  <p>The leader thinks of the co-worker they found <b>hardest to work with</b> (the Least Preferred Co-worker) and rates them on pairs like friendly/unfriendly and cooperative/uncooperative.</p>
+  <ul>
+    <li><b>High LPC (73 or above):</b> still sees the person positively, so is <b>relationship-oriented</b>.</li>
+    <li><b>Low LPC (54 or below):</b> rates the person harshly, so is <b>task-oriented</b>.</li>
+    <li><b>55 to 72:</b> can fit either style.</li>
+  </ul>
+  <p class="eg"><b>Example:</b> Ama calls her difficult colleague "friendly but uncooperative". She focuses on the person, so she is high LPC. Kwesi calls him "lazy and annoying". He focuses on results, so he is low LPC.</p>
+  <h4>Step 2: measure the situation with three factors</h4>
+  <ul>
+    <li><b>Leader-member relations:</b> do followers trust and respect you? (good or poor)</li>
+    <li><b>Task structure:</b> are the tasks clear and standardised? (structured or unstructured)</li>
+    <li><b>Position power:</b> can you reward and punish? (strong or weak)</li>
+  </ul>
+  <p>Good relations + structured task + strong power = very favourable. The opposite = very unfavourable.</p>
+  <h4>Step 3: match</h4>
+  <div class="tbl"><table>
+    <tr><th>Relations</th><th>Task</th><th>Power</th><th>Best leader</th></tr>
+    <tr><td>Good</td><td>Structured</td><td>Strong</td><td>Task (low LPC)</td></tr>
+    <tr><td>Good</td><td>Structured</td><td>Weak</td><td>Task (low LPC)</td></tr>
+    <tr><td>Good</td><td>Unstructured</td><td>Strong</td><td>Task (low LPC)</td></tr>
+    <tr><td>Good</td><td>Unstructured</td><td>Weak</td><td>Relationship (high LPC)</td></tr>
+    <tr><td>Poor</td><td>Structured</td><td>Strong</td><td>Relationship (high LPC)</td></tr>
+    <tr><td>Poor</td><td>Structured</td><td>Weak</td><td>Relationship (high LPC)</td></tr>
+    <tr><td>Poor</td><td>Unstructured</td><td>Strong</td><td>Relationship (high LPC)</td></tr>
+    <tr><td>Poor</td><td>Unstructured</td><td>Weak</td><td>Task (low LPC)</td></tr>
+  </table></div>
+  <p><b>Easy way to remember:</b> task-oriented leaders do best when the situation is <b>very good or very bad</b>. Relationship-oriented leaders do best in the <b>middle</b>, where people skills make the difference.</p>
+  <p><b>Limitations:</b> it assumes style cannot change (so you replace the leader instead), and the LPC measure can be confusing or unfair.</p>
+  <p class="eg">Fiedler's picture: leadership is like sailing. Success depends on the captain's skill and also on the wind and sea.</p>
+
+  <h3>2. Hersey and Blanchard's Situational Leadership (1969)</h3>
+  <p>Unlike Fiedler, they say a good leader <b>can and should change style</b>. The situation here means the <b>followers' readiness</b>: their <b>competence</b> (skill) and <b>commitment</b> (confidence and willingness).</p>
+  <div class="tbl"><table>
+    <tr><th>Follower level</th><th>Followers are</th><th>Leader style</th><th>What the leader says</th></tr>
+    <tr><td>D1</td><td>Unable and unwilling</td><td>S1 Telling</td><td>"Do this exactly as I say."</td></tr>
+    <tr><td>D2</td><td>Unable but willing</td><td>S2 Selling (coaching)</td><td>"Let's do it this way, and here's why."</td></tr>
+    <tr><td>D3</td><td>Able but unwilling or unsure</td><td>S3 Participating</td><td>"What do you think? Let's decide together."</td></tr>
+    <tr><td>D4</td><td>Able and willing</td><td>S4 Delegating</td><td>"You've got this. I trust you."</td></tr>
+  </table></div>
+  <p class="eg"><b>Parent analogy:</b> A very young child is told exactly what to do (telling). A learning, eager child gets instructions and encouragement (selling). A capable but unsure child is listened to (participating). A grown, capable child is trusted (delegating).</p>
+  <p><b>Strengths:</b> simple, practical, focuses on developing followers. <b>Limitations:</b> "readiness" is vague and hard to measure, it ignores things like culture, and not every leader can switch styles easily.</p>
+
+  <h3>3. Path-Goal Theory (Robert House, 1971)</h3>
+  <p>Based on expectancy theory of motivation. The leader's job is to <b>show followers the path</b> to the goal, remove obstacles and make the journey rewarding. Think of the leader as a road guide.</p>
+  <div class="tbl"><table>
+    <tr><th>Style</th><th>What the leader does</th><th>Use when</th></tr>
+    <tr><td>Directive</td><td>Gives clear instructions, sets standards, monitors progress</td><td>Task is unclear or complex, followers are inexperienced</td></tr>
+    <tr><td>Supportive</td><td>Shows care for followers' well-being, creates a friendly climate</td><td>Work is stressful or tedious</td></tr>
+    <tr><td>Participative</td><td>Asks for suggestions before deciding</td><td>Followers are experienced and the task needs creativity</td></tr>
+    <tr><td>Achievement-oriented</td><td>Sets challenging goals and shows confidence in followers</td><td>Followers are competent and motivated</td></tr>
+  </table></div>
+  <p>The style is chosen based on two sets of factors: <b>follower characteristics</b> (their perceived ability) and <b>environment</b> (task structure, work-group relationships).</p>
+
+  <h3>The three compared</h3>
+  <div class="tbl"><table>
+    <tr><th></th><th>Fiedler</th><th>Hersey and Blanchard</th><th>Path-Goal</th></tr>
+    <tr><td>Key variable</td><td>Situation favourableness</td><td>Follower readiness</td><td>Follower and task factors</td></tr>
+    <tr><td>Can leader change style?</td><td>No, style is fixed</td><td>Yes</td><td>Yes</td></tr>
+    <tr><td>Styles</td><td>Task or relationship</td><td>Telling, selling, participating, delegating</td><td>Directive, supportive, participative, achievement</td></tr>
+  </table></div>
+
+  <div class="remember"><strong>Remember this</strong>
+    <ul><li>Contingency means leadership effectiveness depends on the situation.</li><li>Fiedler: style is fixed, so match the leader to the situation. The other two: change your style to fit.</li><li>Fiedler's three factors: relations, task structure, position power.</li></ul>
+  </div>
+
+  <p class="qhead">Check yourself</p>
+  <details class="check"><summary>What does a high LPC score tell us about a leader?</summary><div class="ans">The leader is relationship-oriented. They still rate their least preferred co-worker favourably and put relationships before tasks.</div></details>
+  <details class="check"><summary>Which Hersey and Blanchard style fits a new, willing intern with little skill?</summary><div class="ans">S2 Selling (coaching). The intern is unable but willing (D2), so the leader gives direction and encouragement.</div></details>
+  <details class="check"><summary>Name the four Path-Goal leadership styles.</summary><div class="ans">Directive, supportive, participative and achievement-oriented.</div></details>
+</section>
+
+<!-- ============ WEEK 4 ============ -->
+<section class="week" id="week-4">
+  <p class="wk">Week 4</p>
+  <h2>Leadership in Practice and Governance</h2>
+  <p class="short"><b>In short:</b> Leadership looks different in a classroom, a company, a community and a government, but the same core ideas apply: lead by example, keep learning, care about society, shape the culture, and be accountable.</p>
+
+  <h3>Leadership in varied contexts</h3>
+  <p>"Varied contexts" means different settings. Leadership is needed at work, at school, in the community and in a sports team. The approach must be adapted to each setting.</p>
+  <p class="eg"><b>Example:</b> In a school, the course rep is the leader who speaks for the class and organises it. The same person would lead differently on a football team.</p>
+
+  <h3>Leadership challenges: the five practices of exemplary leaders</h3>
+  <p>Kouzes and Posner collected stories of people at their leadership best. They found that great leadership is about <b>behaviours you can learn</b>, not personality. Five practices came up again and again:</p>
+  <ol>
+    <li><b>Model the way:</b> set an example by living the values you expect from others.</li>
+    <li><b>Inspire a shared vision:</b> picture a better future and get people excited about it.</li>
+    <li><b>Challenge the process:</b> look for chances to improve things and accept that some risks are needed.</li>
+    <li><b>Enable others to act:</b> build teamwork and trust, and involve people.</li>
+    <li><b>Encourage the heart:</b> recognise people's contributions so they keep going. Make them feel like heroes.</li>
+  </ol>
+
+  <h3>Leadership opportunities</h3>
+  <p>You do not need a big title to lead. Examples: leading a project at work, volunteering to lead a club or community group, starting your own business, or organising a family event.</p>
+
+  <h3>Leadership development</h3>
+  <p>Leaders keep growing. Key areas to develop: <b>decision-making, communication, emotional intelligence</b> (understanding your emotions and other people's), <b>conflict resolution</b> and <b>adaptability</b> (leading through change).</p>
+
+  <h3>Social responsibility</h3>
+  <p>A leader must care about the well-being of the wider community, not only the organisation. This shows up as:</p>
+  <ul>
+    <li>Ethical decision-making that considers employees, customers and the community.</li>
+    <li>Corporate Social Responsibility (CSR) programmes, for example in education or health.</li>
+    <li>Transparency and accountability for the results of your decisions.</li>
+    <li>Obeying laws and regulations, and caring about sustainability.</li>
+  </ul>
+
+  <h3>Leadership and organisational culture</h3>
+  <p>Culture means the shared beliefs, values and norms that guide how an organisation behaves. Leaders shape the culture, and culture shapes how leaders can lead.</p>
+  <div class="tbl"><table>
+    <tr><th>Type</th><th>What it stresses</th></tr>
+    <tr><td>Hierarchical</td><td>Strict chain of command, centralised decisions</td></tr>
+    <tr><td>Collegial</td><td>Teamwork, collaboration, open communication</td></tr>
+    <tr><td>Clan</td><td>Loyalty, closeness, a family-like atmosphere</td></tr>
+    <tr><td>Results-oriented</td><td>Reaching targets, competition, measurable outcomes</td></tr>
+    <tr><td>Customer-centric</td><td>Putting customers at the centre of everything</td></tr>
+  </table></div>
+
+  <h3>Leadership in governance</h3>
+  <p>Governance is the way power is used to manage a country's economic and social resources. Leaders shape policy and decisions. Good leadership in governance:</p>
+  <ul>
+    <li><b>Promotes stability:</b> less conflict and a predictable climate for investment. Example: respecting the rule of law and peaceful transfers of power.</li>
+    <li><b>Ensures accountability:</b> leaders take responsibility for results, which builds public trust.</li>
+    <li><b>Enhances responsiveness:</b> leaders listen to citizens and change policies when needs change.</li>
+    <li><b>Encourages participation:</b> inclusive decision-making that involves citizens and civil society.</li>
+  </ul>
+  <p><b>Poor leadership</b> leads to instability and unrest, corruption, public apathy and distrust, and policy failure.</p>
+
+  <div class="remember"><strong>Remember this</strong>
+    <ul><li>Five practices: model the way, inspire a shared vision, challenge the process, enable others to act, encourage the heart.</li><li>Four governance principles: stability, accountability, responsiveness, participation.</li><li>Five culture types: hierarchical, collegial, clan, results-oriented, customer-centric.</li></ul>
+  </div>
+
+  <p class="qhead">Check yourself</p>
+  <details class="check"><summary>List the five practices of exemplary leadership.</summary><div class="ans">Model the way, inspire a shared vision, challenge the process, enable others to act, and encourage the heart.</div></details>
+  <details class="check"><summary>Give two consequences of poor leadership in governance.</summary><div class="ans">Any two of: instability and social unrest, corruption, public apathy and distrust, and policy failure.</div></details>
+</section>
+
+<!-- ============ WEEK 5 ============ -->
+<section class="week" id="week-5">
+  <p class="wk">Week 5</p>
+  <h2>Trust and Power in Leadership</h2>
+  <p class="short"><b>In short:</b> Trust and power are the two things that let a leader influence people. Trust must be earned. Power can come from your position or from who you are, and good leaders rely more on the second kind.</p>
+
+  <h3>What is trust?</h3>
+  <p>Trust is a confident expectation that another person is honest, dependable and competent, and a willingness to be vulnerable to them because of that belief. A title does not give you trust automatically. It is not "pre-packaged with the nameplate". It is earned through your ability, consistency, integrity and delivery.</p>
+  <p>Where there is trust, teams do better: more satisfaction, loyalty, innovation and productivity. Where there is mistrust, there is doubt, frustration and lower output.</p>
+
+  <h3>Dimensions of trust</h3>
+  <p><b>Integrity, competence, consistency, loyalty and openness.</b></p>
+
+  <h3>Types of trust</h3>
+  <div class="tbl"><table>
+    <tr><th>Type</th><th>Meaning</th></tr>
+    <tr><td>Competence trust</td><td>Based on skill and ability. You may not like the person, but you trust them to get the job done.</td></tr>
+    <tr><td>Benevolence trust</td><td>Based on good intentions. You believe the person looks out for you and will not undermine you.</td></tr>
+    <tr><td>Integrity trust</td><td>Based on moral character. The person acts on principle regardless of who is involved.</td></tr>
+  </table></div>
+
+  <h3>How to build and keep trust</h3>
+  <ul>
+    <li><b>Clarity:</b> people trust clarity and distrust confusion. Be clear about expectations.</li>
+    <li><b>Compassion:</b> show that you really care about people's interests.</li>
+    <li><b>Character:</b> do what is right ahead of what is easy.</li>
+    <li><b>Contribution:</b> results build trust quickly.</li>
+    <li><b>Competency:</b> stay current and keep learning. Arrogance kills confidence.</li>
+    <li><b>Connection:</b> ask questions, listen and show gratitude.</li>
+    <li><b>Commitment:</b> stand with people through hard times.</li>
+    <li><b>Consistency:</b> small things done regularly make the big difference.</li>
+  </ul>
+  <p><b>What destroys trust:</b> self-orientation (putting your own interest above the team's) and lack of transparency (hiding information or motives).</p>
+
+  <h3>What is power?</h3>
+  <p>Power is the <b>ability to influence others</b>. It is the capacity of one party to influence another.</p>
+
+  <h3>Types of power (French and Raven, extended by Hersey and Blanchard)</h3>
+  <p>There are seven, grouped into two families.</p>
+  <div class="tbl"><table>
+    <tr><th>Family</th><th>Type</th><th>Where it comes from</th></tr>
+    <tr><td rowspan="3">Positional</td><td>Legitimate</td><td>Your position or title (formal authority)</td></tr>
+    <tr><td>Reward</td><td>Ability to give pay rises, promotions, recognition</td></tr>
+    <tr><td>Coercive</td><td>Ability to punish or withhold rewards</td></tr>
+    <tr><td rowspan="4">Personal</td><td>Expert</td><td>Knowledge and skill that others value</td></tr>
+    <tr><td>Referent</td><td>People admire you and want to be like you (charisma)</td></tr>
+    <tr><td>Connection</td><td>Who you know, inside and outside the organisation</td></tr>
+    <tr><td>Information</td><td>Having access to information others need (short-term power)</td></tr>
+  </table></div>
+  <p>Leaders are generally better served using <b>reward power</b> than <b>coercive power</b>. Rewards and punishment both motivate, but fear damages trust.</p>
+  <p class="eg"><b>Example:</b> A lecturer has legitimate power (the position), reward power (marks) and coercive power (penalties). Students who follow him because they admire him are responding to referent power.</p>
+
+  <div class="remember"><strong>Remember this</strong>
+    <ul><li>Trust is earned, not given with a title.</li><li>Seven types of power: legitimate, reward, coercive (positional) and expert, referent, connection, information (personal).</li><li>Trust and power work together: power gets compliance, trust gets commitment.</li></ul>
+  </div>
+
+  <p class="qhead">Check yourself</p>
+  <details class="check"><summary>Distinguish between positional and personal power.</summary><div class="ans">Positional power comes from the office you hold (legitimate, reward, coercive). Personal power comes from you as a person (expert, referent, connection, information).</div></details>
+  <details class="check"><summary>Why does holding a high position not guarantee trust?</summary><div class="ans">Trust is earned through competence, integrity, consistency and delivery. A title only gives authority.</div></details>
+</section>
+
+<!-- ============ WEEK 6 ============ -->
+<section class="week" id="week-6">
+  <p class="wk">Week 6</p>
+  <h2>Traditional Leadership</h2>
+  <p class="short"><b>In short:</b> Traditional leadership in Ghana is the chieftaincy system, based on custom and lineage. The 1992 Constitution recognises it, and Parliament cannot take that recognition away.</p>
+
+  <h3>What is traditional leadership?</h3>
+  <p>It is leadership where authority is tied to <b>tradition and custom</b>. A traditional leader comes from the appropriate family and lineage and is validly chosen and installed (enstooled or enskinned) according to custom. Chiefs and queen mothers are the main holders. Divisional and sub-divisional chiefs, headmen and elders also belong. They exist in all 16 regions. The institution in charge is the <b>National House of Chiefs (NHC)</b>, under the Chieftaincy Act 1971 (Act 370).</p>
+
+  <h3>A short history</h3>
+  <ul>
+    <li>Before colonialism there were two systems: a <b>centralised</b> one with a king or paramount chief at the top, and a <b>decentralised</b> one without a single ruler.</li>
+    <li>The colonial rulers recognised both and used chiefs for <b>indirect rule</b>, and also added a judicial role to the chiefs' roles.</li>
+    <li>The colonial arrangement is blamed for some modern chieftaincy conflicts, and some chiefs dislike the word "chief" because it was introduced in colonial times.</li>
+  </ul>
+
+  <h3>How it is organised (1992 Constitution)</h3>
+  <div class="tbl"><table>
+    <tr><th>Article</th><th>What it says</th></tr>
+    <tr><td>270</td><td>Recognises the institution of chieftaincy and traditional councils. Parliament cannot make a law that gives or takes away a chief's recognition.</td></tr>
+    <tr><td>271</td><td>Sets up the National House of Chiefs, with paramount chiefs from each region.</td></tr>
+    <tr><td>273</td><td>The NHC has appellate jurisdiction. It handles matters on chieftaincy appealed from Regional Houses through a Judicial Committee.</td></tr>
+    <tr><td>274</td><td>Each region has a Regional House of Chiefs.</td></tr>
+    <tr><td>275</td><td>Disqualifies a person from being a chief if convicted of high treason, a high crime, or offences like fraud, dishonesty or immorality. Chiefs must stay out of active party politics.</td></tr>
+  </table></div>
+  <p>Other bodies: the <b>Council of State</b> (advises the President) and the <b>Ministry for Chieftaincy and Traditional Affairs</b>, which works with the NHC on studying and recording customary law.</p>
+  <p><b>Levels (top to bottom):</b> Ministry, National House of Chiefs, Council of State, Regional Houses of Chiefs, then districts, towns, clans and villages.</p>
+
+  <h3>Roles of chiefs</h3>
+  <p>Chiefs have always had <b>political, social and military</b> roles. The British found them in firm control of their people and so added a <b>judicial</b> role. Today chiefs are mostly development partners: they mobilise communities and land and push local development.</p>
+
+  <h3>Chieftaincy today: the debate</h3>
+  <ul>
+    <li>Democracy stresses equality, free speech and the rule of law, so some ask whether chiefs still have a place.</li>
+    <li>Some want the institution abolished, some say it is too costly, and some want it stripped of political power and left to custom only.</li>
+    <li>Others argue that chiefs have been the weaker partner in governance, and that they should have a clearer role, such as a place in a second chamber or restored judicial duties.</li>
+    <li>Newer forms exist: development chiefs, youth leaders, non-titled chiefs and migrant chiefs. Today people increasingly prefer chiefs who are educated and can bring development.</li>
+  </ul>
+
+  <div class="remember"><strong>Remember this</strong>
+    <ul><li>Authority comes from custom and lineage. Chiefs are enstooled or enskinned.</li><li>Two pre-colonial systems: centralised and decentralised.</li><li>Article 270 protects chieftaincy. Article 275 sets disqualification rules and bars active party politics.</li></ul>
+  </div>
+
+  <p class="qhead">Check yourself</p>
+  <details class="check"><summary>Explain the two traditional authority systems that existed before colonialism.</summary><div class="ans">The centralised system had a clear hierarchy with a king or paramount chief at the top. The decentralised system had no single ruler at the apex.</div></details>
+  <details class="check"><summary>State two grounds that disqualify someone from being a chief under Article 275.</summary><div class="ans">Conviction for high treason or a high crime, or for offences involving state security, fraud, dishonesty or immorality.</div></details>
+</section>
+
+<!-- ============ WEEK 7 ============ -->
+<section class="week" id="week-7">
+  <p class="wk">Week 7</p>
+  <h2>Leadership Styles and Skills</h2>
+  <p class="short"><b>In short:</b> A leadership style is the way a leader gives direction and motivates people. Skills are the abilities that make that style work. This week covers three classic styles, two modern styles, and four groups of skills.</p>
+
+  <h3>The three classic styles (Kurt Lewin, 1939)</h3>
+  <div class="tbl"><table>
+    <tr><th>Style</th><th>How it works</th><th>Best used when</th></tr>
+    <tr><td>Authoritarian (autocratic)</td><td>The leader decides alone and gives clear orders. There is a clear gap between leader and followers.</td><td>Time is short or the leader knows the most. Overused, it feels bossy and controlling.</td></tr>
+    <tr><td>Participative (democratic)</td><td>The leader guides and takes part, and invites input. Lewin found it the most effective.</td><td>You want ideas, motivation and good working relationships.</td></tr>
+    <tr><td>Laissez-faire (delegative)</td><td>The leader gives little or no direction. Lewin found the group least productive.</td><td>Only with highly skilled, self-driven people.</td></tr>
+  </table></div>
+
+  <h3>Transformational leadership</h3>
+  <p>The leader inspires followers to go beyond their own interests, raises their motivation and paints a picture of the future. Bass (1985) gave four elements, often called the four I's:</p>
+  <ul>
+    <li><b>Idealised influence:</b> the leader is a charismatic role model.</li>
+    <li><b>Inspirational motivation:</b> communicates a vision that makes people feel ownership.</li>
+    <li><b>Intellectual stimulation:</b> encourages creativity and new ways of solving problems.</li>
+    <li><b>Individual consideration:</b> pays attention to each follower's needs and ambitions.</li>
+  </ul>
+
+  <h3>Transactional leadership</h3>
+  <p>An exchange: followers do the work, the leader gives something in return (quid pro quo). It is more about tasks and targets than people. Three parts:</p>
+  <ul>
+    <li><b>Contingent reward:</b> reward in exchange for achieving the result.</li>
+    <li><b>Management by exception (active):</b> the leader watches closely and corrects mistakes, a kind of micromanagement.</li>
+    <li><b>Management by exception (passive):</b> the leader gives space and only steps in when something goes wrong.</li>
+  </ul>
+
+  <h3>Skills for leadership</h3>
+  <div class="tbl"><table>
+    <tr><th>Group</th><th>Examples</th></tr>
+    <tr><td>Administrative</td><td>Problem analysis (understanding how things work), judgment (making sound decisions from the information you have), organisational ability</td></tr>
+    <tr><td>Interpersonal</td><td>Coaching (spotting and developing others' talents), sensitivity (understanding people's needs and handling conflicts discreetly)</td></tr>
+    <tr><td>Communication</td><td>Oral (speaking clearly), written (conveying ideas without confusion), non-verbal (body language)</td></tr>
+    <tr><td>Related skills</td><td>Range of interests, personal motivation, flexibility</td></tr>
+  </table></div>
+  <p class="eg"><b>Example:</b> A group leader who explains the task clearly (oral communication), notices that one member is struggling (sensitivity) and helps him (coaching) is using skills from three groups at once.</p>
+
+  <div class="remember"><strong>Remember this</strong>
+    <ul><li>Lewin's three styles: authoritarian, democratic, laissez-faire.</li><li>Transformational inspires and develops people. Transactional exchanges rewards for results.</li><li>Four skill groups: administrative, interpersonal, communication, related skills.</li></ul>
+  </div>
+
+  <p class="qhead">Check yourself</p>
+  <details class="check"><summary>Compare transformational and transactional leadership.</summary><div class="ans">Transformational leaders inspire, develop followers and share a vision. Transactional leaders exchange rewards for performance and focus on tasks and rules.</div></details>
+  <details class="check"><summary>When is the authoritarian style appropriate?</summary><div class="ans">When there is little time for group decision-making, or when the leader is the most knowledgeable person in the group.</div></details>
+</section>
