@@ -44,15 +44,82 @@ const MATERIALS = {
       desc: "The Week 1 lecture rewritten in plain language, with a short written test after each section.",
       link: "https://asare984.github.io/BCPC305_Week1_Foundations_AEF.pdf"
     },
+      {
+      title: "BCPC 305 — Week 2: Theories of Leadership (Simplified)",
+      course: "BCPC305",
+      week: "Week 2",
+      date: "Oct 11, 2026",
+      desc: "Great Man, Trait, Managerial Grid, Pygmalion and Golem theories in plain language, with self-check questions.",
+      link: "https://asare984.github.io/bcpc305-notes.html#week-2"
+    },
     {
-      title: "Example: Business Statistics — simplified guide",
-      course: "BCPC112",
-      week: "Regression & correlation",
-      date: "Sep 5, 2026",
-      desc: "Rebranded, simplified version of the lecture slides.",
-      link: ""
-    }
-  ],
+      title: "BCPC 305 — Week 3: Contingency Theories (Simplified)",
+      course: "BCPC305",
+      week: "Week 3",
+      date: "Oct 11, 2026",
+      desc: "Fiedler, Hersey and Blanchard, and Path-Goal explained step by step, with tables and examples.",
+      link: "https://asare984.github.io/bcpc305-notes.html#week-3"
+    },
+    {
+      title: "BCPC 305 — Week 4: Leadership in Practice and Governance (Simplified)",
+      course: "BCPC305",
+      week: "Week 4",
+      date: "Oct 11, 2026",
+      desc: "The five practices of exemplary leaders, organisational culture, social responsibility and leadership in governance.",
+      link: "https://asare984.github.io/bcpc305-notes.html#week-4"
+    },
+    {
+      title: "BCPC 305 — Week 5: Trust and Power in Leadership (Simplified)",
+      course: "BCPC305",
+      week: "Week 5",
+      date: "Oct 11, 2026",
+      desc: "How trust is built and lost, and the seven types of power, with self-check questions.",
+      link: "https://asare984.github.io/bcpc305-notes.html#week-5"
+    },
+    {
+      title: "BCPC 305 — Week 6: Traditional Leadership (Simplified)",
+      course: "BCPC305",
+      week: "Week 6",
+      date: "Oct 11, 2026",
+      desc: "Chieftaincy in Ghana: history, the 1992 Constitution articles, roles of chiefs and the modern debate.",
+      link: "https://asare984.github.io/bcpc305-notes.html#week-6"
+    },
+    {
+      title: "BCPC 305 — Week 7: Leadership Styles and Skills (Simplified)",
+      course: "BCPC305",
+      week: "Week 7",
+      date: "Oct 11, 2026",
+      desc: "Authoritarian, democratic, laissez-faire, transformational and transactional styles, plus the four groups of leadership skills.",
+      link: "https://asare984.github.io/bcpc305-notes.html#week-7"
+    },
+    {
+      title: "BCPC 305 — Week 9: Decision-Making Models and Styles (Simplified)",
+      course: "BCPC305",
+      week: "Week 9",
+      date: "Oct 11, 2026",
+      desc: "Cognitive Resource Model, Vroom and Yetton's A1 to G2 styles, and rational versus incremental decisions.",
+      link: "https://asare984.github.io/bcpc305-notes.html#week-9"
+    },
+    {
+      title: "BCPC 305 — Week 10: Leading Teams, Groups and Crisis (Simplified)",
+      course: "BCPC305",
+      week: "Week 10",
+      date: "Oct 11, 2026",
+      desc: "Group versus team, the five stages of group development, social loafing, groupthink and leading in a crisis.",
+      link: "https://asare984.github.io/bcpc305-notes.html#week-10"
+    },
+    {
+      title: "BCPC 305 — Week 11: Ethical Leadership and Values (Simplified)",
+      course: "BCPC305",
+      week: "Week 11",
+      date: "Oct 11, 2026",
+      desc: "Ethics, morality and values, Northouse's five principles of ethical leadership, and who enforces accountability in Ghana.",
+      link: "https://asare984.github.io/bcpc305-notes.html#week-11"
+    },
+    ],
+
+
+  
 
   exercises: [
     {
