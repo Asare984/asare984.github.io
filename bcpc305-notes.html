@@ -15,7 +15,7 @@
   --sans:"Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
+
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65}
 a{color:var(--navy-2)}
 header.top{background:var(--navy);color:#fff;padding:28px 20px 26px}
@@ -23,16 +23,23 @@ header.top{background:var(--navy);color:#fff;padding:28px 20px 26px}
 header.top .brand{font-family:var(--serif);font-size:15px;color:var(--gold);margin:0 0 10px}
 header.top h1{font-family:var(--serif);font-size:clamp(26px,6vw,38px);line-height:1.15;margin:0 0 10px;font-weight:700}
 header.top p{margin:0;color:#d8dcee;max-width:56ch}
-nav.weeks{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line)}
-nav.weeks .wrap{display:flex;gap:6px;overflow-x:auto;padding:10px 16px;scrollbar-width:none}
-nav.weeks .wrap::-webkit-scrollbar{display:none}
-nav.weeks a{flex:0 0 auto;text-decoration:none;color:var(--muted);font-size:15px;font-weight:500;padding:6px 12px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
-nav.weeks a.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.back{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);display:none}
+.back .wrap{padding:10px 20px}
+.back a{font-weight:600;text-decoration:none;color:var(--navy);font-size:16px}
+body.view-week .back{display:block}
+body.view-week #home,body.view-week header.top{display:none}
+.home-list{list-style:none;padding:0;margin:18px 0 0}
+.home-list li{margin:0 0 10px}
+.home-list a{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;color:var(--ink)}
+.home-list a:hover,.home-list a:focus-visible{border-color:var(--gold);outline:none}
+.home-list b{display:block;font-family:var(--serif);font-size:19px;color:var(--navy);line-height:1.25}
+.home-list span{display:block;font-size:15px;color:var(--muted);margin-top:2px}
+.home-list em{font-style:normal;font-size:14px;font-weight:600;color:#8a6a1d}
 main{padding:8px 20px 60px}
 .how{background:var(--gold-soft);border-left:4px solid var(--gold);padding:14px 16px;margin:24px 0 8px;border-radius:0 6px 6px 0;font-size:16px}
 .how p{margin:0 0 6px}.how p:last-child{margin:0}
-section.week{padding-top:34px;border-top:1px solid var(--line);margin-top:34px}
-section.week:first-of-type{border-top:0;margin-top:10px}
+section.week{display:none;padding-top:22px}
+section.week.show{display:block}
 .wk{font-size:15px;color:var(--muted);margin:0 0 2px;font-weight:600}
 h2{font-family:var(--serif);font-size:clamp(24px,5.5vw,32px);line-height:1.2;margin:0 0 12px;color:var(--navy)}
 h3{font-family:var(--serif);font-size:21px;margin:30px 0 8px;color:var(--navy)}
@@ -57,7 +64,7 @@ tr:last-child td{border-bottom:0}
 .check summary::before{content:"+";display:inline-block;width:22px;color:var(--gold);font-weight:700}
 .check[open] summary::before{content:"\2212"}
 .check .ans{padding:0 16px 14px 38px;color:#2e3550}
-.check summary:focus-visible,nav.weeks a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.check summary:focus-visible,.home-list a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .qhead{font-family:var(--serif);font-size:19px;color:var(--navy);margin:26px 0 10px}
 footer{background:var(--navy);color:#cfd4ea;text-align:center;padding:22px 20px;font-size:15px}
 footer b{color:var(--gold);font-family:var(--serif)}
@@ -74,28 +81,12 @@ footer b{color:var(--gold);font-family:var(--serif)}
   </div>
 </header>
 
-<nav class="weeks" aria-label="Weeks">
-  <div class="wrap">
-    <a href="#week-1">Wk 1 Foundations</a>
-    <a href="#week-2">Wk 2 Theories</a>
-    <a href="#week-3">Wk 3 Contingency</a>
-    <a href="#week-4">Wk 4 Practice &amp; Governance</a>
-    <a href="#week-5">Wk 5 Trust &amp; Power</a>
-    <a href="#week-6">Wk 6 Traditional</a>
-    <a href="#week-7">Wk 7 Styles &amp; Skills</a>
-    <a href="#week-9">Wk 9 Decisions</a>
-    <a href="#week-10">Wk 10 Teams &amp; Crisis</a>
-    <a href="#week-11">Wk 11 Ethics</a>
-  </div>
-</nav>
+<div class="back"><div class="wrap"><a href="#">&larr; All weeks</a></div></div>
 
 <main>
 <div class="wrap">
 
-<div class="how">
-  <p><b>How to use these notes.</b> Read the "In short" box first, then the detail. Tap each question at the end of a week to test yourself before you look at the answer.</p>
-  <p>The Interim Assessment (Week 8) covers Weeks 1 to 7. The final exam has 20 multiple-choice questions, then 4 essay questions of which you answer 3.</p>
-</div>
+<div id="home"><div class="how"><p><b>How to use these notes.</b> Tap a week to open it. Each week has an "In short" box, the detail, and questions to test yourself.</p><p>The Interim Assessment (Week 8) covers Weeks 1 to 7.</p></div><ul class="home-list"><li><a href="#week-1"><em>Week 1</em><b>Foundations of Leadership</b><span>What leadership is, levels, functions, leader vs manager</span></a></li><li><a href="#week-2"><em>Week 2</em><b>Theories of Leadership</b><span>Great Man, Trait, Managerial Grid, Pygmalion, Golem</span></a></li><li><a href="#week-3"><em>Week 3</em><b>Contingency Theories</b><span>Fiedler, Hersey and Blanchard, Path-Goal</span></a></li><li><a href="#week-4"><em>Week 4</em><b>Leadership in Practice and Governance</b><span>Five practices, culture, social responsibility, governance</span></a></li><li><a href="#week-5"><em>Week 5</em><b>Trust and Power</b><span>Building trust, seven types of power</span></a></li><li><a href="#week-6"><em>Week 6</em><b>Traditional Leadership</b><span>Chieftaincy in Ghana and the 1992 Constitution</span></a></li><li><a href="#week-7"><em>Week 7</em><b>Leadership Styles and Skills</b><span>Lewin, transformational, transactional, skill groups</span></a></li><li><a href="#week-9"><em>Week 9</em><b>Decision-Making Models and Styles</b><span>Cognitive Resource, Vroom and Yetton, rational vs incremental</span></a></li><li><a href="#week-10"><em>Week 10</em><b>Teams, Groups and Crisis</b><span>Group stages, social loafing, groupthink, crisis</span></a></li><li><a href="#week-11"><em>Week 11</em><b>Ethical Leadership and Values</b><span>Northouse's five principles, enforcing accountability</span></a></li></ul></div>
 
 <!-- ============ WEEK 1 ============ -->
 <section class="week" id="week-1">
@@ -706,19 +697,15 @@ footer b{color:var(--gold);font-family:var(--serif)}
 
 <script>
 (function(){
-  var links=[].slice.call(document.querySelectorAll('nav.weeks a'));
-  var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
-  if(!('IntersectionObserver' in window))return;
-  var io=new IntersectionObserver(function(es){
-    es.forEach(function(e){
-      if(e.isIntersecting){
-        links.forEach(function(a){a.classList.remove('on');});
-        var a=map[e.target.id];
-        if(a){a.classList.add('on');a.scrollIntoView({inline:'center',block:'nearest'});}
-      }
-    });
-  },{rootMargin:'-20% 0px -70% 0px'});
-  document.querySelectorAll('section.week').forEach(function(s){io.observe(s);});
+  var weeks=[].slice.call(document.querySelectorAll('section.week'));
+  function route(){
+    var id=location.hash.slice(1), found=false;
+    weeks.forEach(function(w){var on=(w.id===id);w.classList.toggle('show',on);if(on)found=true;});
+    document.body.classList.toggle('view-week',found);
+    window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange',route);
+  route();
 })();
 </script>
 </body>
