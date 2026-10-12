@@ -873,6 +873,26 @@ const QUIZZES = {
         explain: "Building community means leaders can't just impose their will — they must find goals that work for the whole group."
       }
     ]
-  }
+  }};MATERIALS.notes = MATERIALS.notes.filter(function (n) {
+  return !/Week (2|3|4|5|6|7|9|10|11):/.test(n.title) && !/All Notes/.test(n.title);
+});
+MATERIALS.notes.unshift({
+  title: "BCPC 305 — Principles of Leadership: All Notes (Weeks 1 to 11)",
+  course: "BCPC305",
+  week: "All weeks",
+  date: "Oct 11, 2026",
+  desc: "Tap to open the simplified notes for every week, with self-check questions.",
+  link: "https://asare984.github.io/bcpc305-notes.html"
+});
+MATERIALS.exercises = MATERIALS.exercises.filter(function (e) {
+  return !/Essay Questions/.test(e.title);
+});
+MATERIALS.exercises.unshift({
+  title: "BCPC 305 — Essay Questions (Weeks 1 to 11)",
+  course: "BCPC305",
+  week: "All weeks",
+  date: "Oct 12, 2026",
+  desc: "Exam-style essay questions for every week, with an outline of what a good answer includes.",
+  link: "https://asare984.github.io/bcpc305-essay-questions.html"
+});
 
-};
