@@ -874,7 +874,7 @@ const QUIZZES = {
       }
     ]
   }};MATERIALS.notes = MATERIALS.notes.filter(function (n) {
-  return !/Week (2|3|4|5|6|7|9|10|11):/.test(n.title) && !/All Notes/.test(n.title);
+  return !/Week (1|2|3|4|5|6|7|9|10|11):/.test(n.title) && !/All Notes/.test(n.title);
 });
 MATERIALS.notes.unshift({
   title: "BCPC 305 — Principles of Leadership: All Notes (Weeks 1 to 11)",
