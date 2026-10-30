@@ -1,0 +1,1158 @@
+{
+  "course": {
+    "code": "BCPC203",
+    "title": "Introduction to Business Finance",
+    "level": 200,
+    "source": "Combined lecture slides (BCPC203 course outline and weekly slides)"
+  },
+  "quizzes": [
+    {
+      "id": "BCPC203-Q1",
+      "week": "Week 1",
+      "title": "Overview of Business Finance",
+      "questions": [
+        {
+          "question": "Which of these is NOT one of the four basic decision areas of business finance?",
+          "options": [
+            "Financing decision",
+            "Investment decision",
+            "Dividend policy decision",
+            "Marketing mix decision"
+          ],
+          "answer": "D",
+          "explanation": "The four areas are investment, financing, dividend policy and working capital management decisions."
+        },
+        {
+          "question": "Which decision is about the types, numbers and composition of assets a firm should acquire to create value?",
+          "options": [
+            "Dividend policy decision",
+            "Working capital decision",
+            "Investment decision",
+            "Financing decision"
+          ],
+          "answer": "C",
+          "explanation": "The investment decision is the most important for value creation; it determines what assets the firm invests in."
+        },
+        {
+          "question": "The financing decision is also referred to as the:",
+          "options": [
+            "Investment appraisal decision",
+            "Capital structure decision",
+            "Dividend decision",
+            "Working capital decision"
+          ],
+          "answer": "B",
+          "explanation": "It is about where and how funds are sourced: equity, debt or a mix of both."
+        },
+        {
+          "question": "Which is universally accepted as the goal of the firm?",
+          "options": [
+            "Sales maximization",
+            "Wealth (value) maximization",
+            "Cost minimization",
+            "Profit maximization"
+          ],
+          "answer": "B",
+          "explanation": "Wealth maximization (also called value or net present worth maximization) is the goal of the firm."
+        },
+        {
+          "question": "Which is a drawback of profit maximization as a goal?",
+          "options": [
+            "It is based purely on cash flows",
+            "It fully accounts for risk",
+            "It ignores the time value of money",
+            "It focuses on long-term value"
+          ],
+          "answer": "C",
+          "explanation": "Profit maximization is vague, short term, ignores risk and the time value of money, and has no bearing on cash flows."
+        },
+        {
+          "question": "A key limitation of a sole proprietorship is that:",
+          "options": [
+            "The owner has unlimited personal liability for business debts",
+            "It faces heavy government regulation",
+            "Ownership is easily transferred",
+            "It has an unlimited life"
+          ],
+          "answer": "A",
+          "explanation": "Losses can exceed the proprietor's investment, and the business's life is limited to the life of the owner."
+        },
+        {
+          "question": "Which is an advantage of a corporation?",
+          "options": [
+            "It is the cheapest and simplest to set up",
+            "Limited liability for its owners",
+            "Corporate earnings avoid double taxation",
+            "Its life ends with the death of the owner"
+          ],
+          "answer": "B",
+          "explanation": "Corporations offer unlimited life, easy transfer of ownership and limited liability. Double taxation and complex set-up are disadvantages."
+        },
+        {
+          "question": "The principal-agent problem is a conflict of interest between:",
+          "options": [
+            "Lenders and customers",
+            "Shareholders (principals) and managers (agents)",
+            "Employees and government",
+            "Auditors and bankers"
+          ],
+          "answer": "B",
+          "explanation": "Shareholders own the firm but managers control it, and their goals may differ."
+        },
+        {
+          "question": "Which of these is a managerial incentive used to align managers' interests with shareholders'?",
+          "options": [
+            "Removing the board of directors",
+            "Reducing information given to shareholders",
+            "Stock options",
+            "Increasing managers' perks"
+          ],
+          "answer": "C",
+          "explanation": "Bonuses, shares and stock options tie managers' rewards to shareholder wealth."
+        }
+      ]
+    },
+    {
+      "id": "BCPC203-Q2",
+      "week": "Week 2",
+      "title": "Introduction to Financial Markets",
+      "questions": [
+        {
+          "question": "A financial intermediary is an institution that:",
+          "options": [
+            "Sets government interest rates",
+            "Links lenders with borrowers by taking deposits and re-lending them",
+            "Only trades foreign currencies",
+            "Audits listed companies"
+          ],
+          "answer": "B",
+          "explanation": "Examples include commercial banks, building societies and pension funds."
+        },
+        {
+          "question": "The primary market is where:",
+          "options": [
+            "Only treasury bills are traded",
+            "Existing shares are traded between investors",
+            "Only currencies are exchanged",
+            "New or fresh issues of shares and bonds are sold to raise finance"
+          ],
+          "answer": "D",
+          "explanation": "The primary market enables organisations to raise new finance."
+        },
+        {
+          "question": "The main role of the secondary market is to:",
+          "options": [
+            "Let existing investors sell their investments",
+            "Issue new bonds",
+            "Set the policy rate",
+            "Raise new capital for firms"
+          ],
+          "answer": "A",
+          "explanation": "Secondary markets handle subsequent trading of securities already issued."
+        },
+        {
+          "question": "Which is a money market instrument?",
+          "options": [
+            "Debentures",
+            "Ordinary shares",
+            "Corporate bonds",
+            "Treasury bills"
+          ],
+          "answer": "D",
+          "explanation": "Money markets trade short-term instruments such as treasury bills; shares and corporate bonds belong to the capital market."
+        },
+        {
+          "question": "Commercial paper is best described as:",
+          "options": [
+            "An unsecured promissory note with a fixed maturity issued by large firms",
+            "A long-term secured loan",
+            "A government bond",
+            "A share in company ownership"
+          ],
+          "answer": "A",
+          "explanation": "It is used by large firms to obtain short-term funds."
+        },
+        {
+          "question": "Buying a security cheaply in one market and simultaneously selling it in another to make a risk-free profit is called:",
+          "options": [
+            "Arbitrage",
+            "Hedging",
+            "Underwriting",
+            "Diversification"
+          ],
+          "answer": "A",
+          "explanation": "That is arbitrage profit, one of the functions of financial markets."
+        },
+        {
+          "question": "In weak-form efficiency, prices reflect:",
+          "options": [
+            "All public information",
+            "All public and private information",
+            "No information at all",
+            "Information in past prices, so prices follow a random walk"
+          ],
+          "answer": "D",
+          "explanation": "Under weak form, studying past returns cannot give consistently superior profits."
+        },
+        {
+          "question": "Under semi-strong efficiency, share prices adjust immediately to:",
+          "options": [
+            "Past prices only",
+            "Nothing, prices adjust slowly",
+            "Only insider information",
+            "All public information, such as earnings announcements"
+          ],
+          "answer": "D",
+          "explanation": "Semi-strong prices reflect past prices and all other public information."
+        },
+        {
+          "question": "In which form of efficiency would no investment manager consistently beat the market, even with painstaking analysis?",
+          "options": [
+            "Weak form",
+            "None of them",
+            "Semi-strong form",
+            "Strong form"
+          ],
+          "answer": "D",
+          "explanation": "Strong form prices reflect all information that can be acquired by painstaking analysis."
+        }
+      ]
+    },
+    {
+      "id": "BCPC203-Q3",
+      "week": "Week 3",
+      "title": "Sources of Finance",
+      "questions": [
+        {
+          "question": "A key feature of an overdraft is that:",
+          "options": [
+            "It is repayable only after 10 years",
+            "It must be secured by shares",
+            "Interest is paid on the full limit at all times",
+            "Interest is paid only when the account is overdrawn"
+          ],
+          "answer": "D",
+          "explanation": "Overdrafts are flexible, and technically repayable on demand."
+        },
+        {
+          "question": "Trade credit typically has payment terms of:",
+          "options": [
+            "30 to 90 days",
+            "Same-day payment",
+            "1 to 5 years",
+            "10 to 20 years"
+          ],
+          "answer": "A",
+          "explanation": "Trade credit is effectively an interest-free short-term loan, but early-payment discounts may be lost."
+        },
+        {
+          "question": "In a lease, the lessor:",
+          "options": [
+            "Gets possession and use of the asset",
+            "Retains ownership of the asset",
+            "Pays the rentals",
+            "Becomes the owner after the first rental"
+          ],
+          "answer": "B",
+          "explanation": "The lessee has possession and use of the asset in return for specified rentals."
+        },
+        {
+          "question": "In a sale and lease back, a company:",
+          "options": [
+            "Issues new shares to the public",
+            "Buys property from a bank",
+            "Converts debt into shares",
+            "Sells property it owns for immediate cash and rents it back"
+          ],
+          "answer": "D",
+          "explanation": "Buyers are often insurance companies or pension funds, with rent reviews every few years."
+        },
+        {
+          "question": "A debenture is:",
+          "options": [
+            "An overdraft facility",
+            "A rights issue",
+            "A share in company ownership",
+            "A loan note acknowledging a debt, with provisions for interest and repayment of capital"
+          ],
+          "answer": "D",
+          "explanation": "Debentures and bonds are long-term debt finance."
+        },
+        {
+          "question": "Venture capital is:",
+          "options": [
+            "Capital raised from a rights issue",
+            "A government grant",
+            "Risk capital provided in return for an equity stake in private companies",
+            "A secured bank overdraft"
+          ],
+          "answer": "C",
+          "explanation": "It may fund start-ups, business development, management buyouts or help an owner realise an investment."
+        },
+        {
+          "question": "Ordinary shareholders are described as the ultimate bearers of risk because:",
+          "options": [
+            "They receive fixed interest",
+            "They rank at the bottom of the creditor hierarchy in a liquidation",
+            "They have no voting rights",
+            "They are paid before debenture holders"
+          ],
+          "answer": "B",
+          "explanation": "They are paid last if the company is liquidated."
+        },
+        {
+          "question": "Compared with an IPO, a placing is generally:",
+          "options": [
+            "Subject to more disclosure",
+            "Cheaper and quicker",
+            "Open to the whole public",
+            "More expensive and slower"
+          ],
+          "answer": "B",
+          "explanation": "Placings are cheaper, quicker and involve less disclosure, but most shares go to a few institutions."
+        },
+        {
+          "question": "A rights issue is an offer of new shares to:",
+          "options": [
+            "Existing shareholders, usually at a price below the market price",
+            "The general public only",
+            "Employees only",
+            "Bondholders only"
+          ],
+          "answer": "A",
+          "explanation": "The discount makes the shares attractive, and relative voting rights are unaffected if all take up their rights."
+        },
+        {
+          "question": "With a Stock Exchange introduction:",
+          "options": [
+            "The company borrows from the exchange",
+            "New shares are sold to the public",
+            "No shares are made available, but a quotation is granted",
+            "Shares are placed with institutions"
+          ],
+          "answer": "C",
+          "explanation": "It only applies where shares in a large company are already widely held."
+        }
+      ]
+    },
+    {
+      "id": "BCPC203-Q4",
+      "week": "Week 4",
+      "title": "Introduction to Capital Structure",
+      "questions": [
+        {
+          "question": "Gearing (leverage) is:",
+          "options": [
+            "The ratio of sales to assets",
+            "The amount of cash held",
+            "The amount of debt finance a company uses relative to its equity finance",
+            "The ratio of profit to sales"
+          ],
+          "answer": "C",
+          "explanation": "A highly geared company carries high fixed interest charges, so earnings to equity vary more."
+        },
+        {
+          "question": "Firm B has ordinary shares of GH¢6,000,000 and 8% bonds of GH¢9,000,000. Its debt/equity gearing is:",
+          "options": [
+            "67%, lowly geared",
+            "150%, highly geared",
+            "100%, neutrally geared",
+            "15%, lowly geared"
+          ],
+          "answer": "B",
+          "explanation": "9,000,000 / 6,000,000 = 1.5 = 150%. Over 100% means highly geared."
+        },
+        {
+          "question": "Firm C has ordinary shares of GH¢5,000,000 and bonds of GH¢5,000,000. It is:",
+          "options": [
+            "Lowly geared",
+            "Neutrally geared",
+            "Ungeared",
+            "Highly geared"
+          ],
+          "answer": "B",
+          "explanation": "5,000,000 / 5,000,000 = 100%, exactly one, so neutrally geared."
+        },
+        {
+          "question": "According to Modigliani and Miller (no tax), a firm's capital structure:",
+          "options": [
+            "Only matters for small firms",
+            "Always lowers firm value",
+            "Has no impact on its value or WACC",
+            "Always raises firm value"
+          ],
+          "answer": "C",
+          "explanation": "With perfect markets and no tax, whether a firm is levered or unlevered is irrelevant."
+        },
+        {
+          "question": "Which is NOT an assumption of M&M's theory without tax?",
+          "options": [
+            "100% dividend payout",
+            "Firms pay corporate tax of 25%",
+            "No transaction costs",
+            "No corporate tax"
+          ],
+          "answer": "B",
+          "explanation": "The no-tax version assumes no corporate tax, no transaction costs, a 100% payout and unrestricted borrowing by investors."
+        },
+        {
+          "question": "M&M adjusted for tax (1963) says:",
+          "options": [
+            "Debt has no effect on WACC",
+            "Tax relief on interest is ignored",
+            "WACC rises with every unit of debt",
+            "The tax shield on interest lowers WACC, which keeps falling as gearing rises"
+          ],
+          "answer": "D",
+          "explanation": "The savings from tax relief on debt interest are the tax shield."
+        },
+        {
+          "question": "The traditional view suggests that WACC:",
+          "options": [
+            "Rises steadily from zero debt",
+            "Is constant at all gearing levels",
+            "Falls continuously to 100% debt",
+            "Falls at first as debt increases, then rises as the cost of equity (and debt) climbs"
+          ],
+          "answer": "D",
+          "explanation": "The optimum gearing is where WACC is at its minimum, though the theory does not give the exact ratio."
+        },
+        {
+          "question": "The trade-off theory says that:",
+          "options": [
+            "Gearing has no effect on risk",
+            "Equity is always cheaper",
+            "Debt is always free",
+            "The tax advantage of debt is offset by bankruptcy and financial distress costs"
+          ],
+          "answer": "D",
+          "explanation": "Levered firms face both costs and benefits."
+        },
+        {
+          "question": "According to the pecking order theory, a profitable firm prefers to raise finance:",
+          "options": [
+            "First from debt, then retained earnings",
+            "First from equity, then debt",
+            "Only from new shares",
+            "First from retained earnings, then debt, then equity"
+          ],
+          "answer": "D",
+          "explanation": "Internal funds are cheapest; if external funds are needed, debt is preferred to equity."
+        }
+      ]
+    },
+    {
+      "id": "BCPC203-Q5",
+      "week": "Week 5",
+      "title": "Introduction to Financial Statement Analysis",
+      "questions": [
+        {
+          "question": "In common-size statements, balance sheet items are shown as a percentage of ____ and income statement items as a percentage of ____.",
+          "options": [
+            "equity; profit",
+            "total assets; sales",
+            "liabilities; expenses",
+            "sales; total assets"
+          ],
+          "answer": "B",
+          "explanation": "Standardising lets firms of different sizes and currencies be compared."
+        },
+        {
+          "question": "Which group of ratios does the current ratio belong to?",
+          "options": [
+            "Profitability ratios",
+            "Long-term solvency ratios",
+            "Short-term solvency (liquidity) ratios",
+            "Market value ratios"
+          ],
+          "answer": "C",
+          "explanation": "The five categories are liquidity, leverage, asset management, profitability and market value ratios."
+        },
+        {
+          "question": "Madina Corporation has current assets of GH¢700,000 and current liabilities of GH¢300,000. Its current ratio is:",
+          "options": [
+            "0.43 times",
+            "2.33 times",
+            "1.33 times",
+            "3.00 times"
+          ],
+          "answer": "B",
+          "explanation": "700 / 300 = 2.33."
+        },
+        {
+          "question": "Madina's inventories are GH¢300,000. Its quick (acid-test) ratio is:",
+          "options": [
+            "2.33 times",
+            "1.33 times",
+            "0.67 times",
+            "0.43 times"
+          ],
+          "answer": "B",
+          "explanation": "(700 - 300) / 300 = 1.33. Inventory is removed because it is often the least liquid current asset."
+        },
+        {
+          "question": "Madina's EBIT is GH¢270,000 and total interest expense is GH¢70,000. Times interest earned is about:",
+          "options": [
+            "4.50 times",
+            "0.26 times",
+            "2.70 times",
+            "3.86 times"
+          ],
+          "answer": "D",
+          "explanation": "270 / 70 = 3.86 times."
+        },
+        {
+          "question": "A firm has a total debt ratio of 0.36. Its debt-equity ratio is about:",
+          "options": [
+            "0.56 times",
+            "0.64 times",
+            "0.36 times",
+            "1.56 times"
+          ],
+          "answer": "A",
+          "explanation": "0.36 / 0.64 = 0.56. The equity multiplier = 1 + D/E = 1.56."
+        },
+        {
+          "question": "If inventory turnover is 4 times, days' sales in inventory is:",
+          "options": [
+            "365 days",
+            "4 days",
+            "14.6 days",
+            "91.25 days"
+          ],
+          "answer": "D",
+          "explanation": "365 / 4 = 91.25 days."
+        },
+        {
+          "question": "If ROE exceeds ROA, this reflects:",
+          "options": [
+            "High dividends",
+            "Poor inventory control",
+            "The firm's use of debt",
+            "Low profit margins"
+          ],
+          "answer": "C",
+          "explanation": "Debt financing magnifies the return to equity holders."
+        },
+        {
+          "question": "Madina's net income is GH¢120,000 and total equity is GH¢1,076,000. Its return on equity is about:",
+          "options": [
+            "12.00%",
+            "9.00%",
+            "4.00%",
+            "11.15%"
+          ],
+          "answer": "D",
+          "explanation": "120 / 1,076 = 11.15%."
+        },
+        {
+          "question": "Madina's EPS is GH¢0.60 (net income GH¢120,000 over 200,000 shares) and the share price is GH¢5.25. Its P/E ratio is:",
+          "options": [
+            "6.00 times",
+            "10.50 times",
+            "0.11 times",
+            "8.75 times"
+          ],
+          "answer": "D",
+          "explanation": "5.25 / 0.60 = 8.75 times."
+        }
+      ]
+    },
+    {
+      "id": "BCPC203-Q6",
+      "week": "Week 6",
+      "title": "Time Value of Money",
+      "questions": [
+        {
+          "question": "The time value of money means that:",
+          "options": [
+            "A cedi is worth the same at any date",
+            "Interest is always zero",
+            "Future cedis are worth more than today's",
+            "A cedi received today is worth more than a cedi received in the future"
+          ],
+          "answer": "D",
+          "explanation": "Money invested today starts earning interest sooner."
+        },
+        {
+          "question": "Ama invests GH¢1,000 at 10% p.a. for 4 years under simple interest. At the end of year 4 she has:",
+          "options": [
+            "GH¢1,400",
+            "GH¢1,464.10",
+            "GH¢1,100",
+            "GH¢1,040"
+          ],
+          "answer": "A",
+          "explanation": "Simple interest = 1,000 x 10% x 4 = 400, so 1,000 + 400 = 1,400."
+        },
+        {
+          "question": "If the same GH¢1,000 earns 10% p.a. compound interest for 4 years, it grows to:",
+          "options": [
+            "GH¢1,464.10",
+            "GH¢1,400",
+            "GH¢1,410",
+            "GH¢1,500"
+          ],
+          "answer": "A",
+          "explanation": "1,000 x 1.1^4 = 1,464.10, which is GH¢64.10 more than simple interest."
+        },
+        {
+          "question": "A nominal rate of 6% and inflation of 3%: using the Fisher effect, the real rate is about:",
+          "options": [
+            "3.00%",
+            "9.00%",
+            "1.03%",
+            "2.91%"
+          ],
+          "answer": "D",
+          "explanation": "1.06 / 1.03 - 1 = 0.0291."
+        },
+        {
+          "question": "A loan has a nominal rate of 12% with monthly compounding. The effective annual rate (EAR) is about:",
+          "options": [
+            "1.00%",
+            "12.68%",
+            "12.00%",
+            "13.20%"
+          ],
+          "answer": "B",
+          "explanation": "(1 + 0.12/12)^12 - 1 = 12.68%."
+        },
+        {
+          "question": "What is GH¢2,000 worth in 3 years at 10% compound interest?",
+          "options": [
+            "GH¢2,420",
+            "GH¢2,640",
+            "GH¢2,600",
+            "GH¢2,662"
+          ],
+          "answer": "D",
+          "explanation": "2,000 x 1.1^3 = 2,662."
+        },
+        {
+          "question": "What is the present value of GH¢1,331 due in 3 years at 10%?",
+          "options": [
+            "GH¢1,000",
+            "GH¢1,200",
+            "GH¢900",
+            "GH¢1,331"
+          ],
+          "answer": "A",
+          "explanation": "1,331 / 1.1^3 = 1,000."
+        },
+        {
+          "question": "5% interest on GH¢26,000 for 10 years is offered by Bank A (quarterly), Bank B (monthly) and Bank C (daily). Which gives the highest final amount?",
+          "options": [
+            "Bank C, because more frequent compounding gives a higher effective rate",
+            "All three give the same amount",
+            "Bank A, because it compounds least often",
+            "Bank B, because monthly is optimal"
+          ],
+          "answer": "A",
+          "explanation": "The more often interest is compounded, the higher the effective rate."
+        },
+        {
+          "question": "The present value of GH¢1,000 received at the end of each of the next 3 years at 10% is about:",
+          "options": [
+            "GH¢3,000",
+            "GH¢3,310",
+            "GH¢2,486.85",
+            "GH¢2,000"
+          ],
+          "answer": "C",
+          "explanation": "1,000 x (1/1.1 + 1/1.21 + 1/1.331) = 2,486.85."
+        },
+        {
+          "question": "A perpetuity pays GH¢500 per year forever. At a 10% discount rate, its present value is:",
+          "options": [
+            "GH¢500",
+            "GH¢10,000",
+            "GH¢5,000",
+            "GH¢50"
+          ],
+          "answer": "C",
+          "explanation": "PV = 500 / 0.10 = 5,000."
+        }
+      ]
+    },
+    {
+      "id": "BCPC203-Q7",
+      "week": "Week 7",
+      "title": "Introduction to Investment Decisions",
+      "questions": [
+        {
+          "question": "Capital budgeting is the process of:",
+          "options": [
+            "Raising short-term overdrafts",
+            "Identifying, analysing and selecting investment projects whose returns extend beyond one year",
+            "Preparing monthly cash budgets",
+            "Paying dividends"
+          ],
+          "answer": "B",
+          "explanation": "It deals with long-term investment decisions."
+        },
+        {
+          "question": "Plant and machinery is an example of:",
+          "options": [
+            "Capital expenditure, charged to the balance sheet",
+            "A working capital item",
+            "Revenue expenditure, charged to the income statement",
+            "A dividend"
+          ],
+          "answer": "A",
+          "explanation": "Capital expenditure acquires or improves non-current assets."
+        },
+        {
+          "question": "The main weakness of the payback period is that it:",
+          "options": [
+            "Ignores the time value of money",
+            "Considers cash flows after the payback date",
+            "Uses discounted cash flows",
+            "Is too complex to calculate"
+          ],
+          "answer": "A",
+          "explanation": "Payback also ignores cash flows after the payback period."
+        },
+        {
+          "question": "A project costs GH¢10,000 and returns GH¢4,000 per year. Its payback period is:",
+          "options": [
+            "2 years",
+            "4 years",
+            "2.5 years",
+            "3 years"
+          ],
+          "answer": "C",
+          "explanation": "After 2 years GH¢8,000 is recovered; the remaining 2,000 / 4,000 = 0.5 year."
+        },
+        {
+          "question": "The discounted payback period still fails to:",
+          "options": [
+            "Use the cost of capital",
+            "Account for the time value of money",
+            "Consider cash flows after the payback period",
+            "Recover the investment outlay"
+          ],
+          "answer": "C",
+          "explanation": "It discounts cash flows, so it covers the time value of money, but ignores later flows."
+        },
+        {
+          "question": "The NPV decision rule is to accept the project if:",
+          "options": [
+            "NPV is greater than zero",
+            "NPV equals the initial investment",
+            "IRR is less than cost of capital",
+            "NPV is less than zero"
+          ],
+          "answer": "A",
+          "explanation": "A positive NPV means a return above the cost of capital and adds to shareholders' wealth."
+        },
+        {
+          "question": "A project costs GH¢1,000 and returns GH¢600 per year for 3 years. At 10%, its NPV is about:",
+          "options": [
+            "GH¢300",
+            "GH¢492",
+            "GH¢800",
+            "GH¢1,492"
+          ],
+          "answer": "B",
+          "explanation": "600 x 2.4869 = 1,492.1, minus 1,000 = 492.1."
+        },
+        {
+          "question": "The internal rate of return (IRR) is the discount rate at which:",
+          "options": [
+            "NPV equals zero",
+            "Payback is one year",
+            "NPV is maximised",
+            "PI equals 2"
+          ],
+          "answer": "A",
+          "explanation": "A standard project is accepted if IRR exceeds the cost of capital."
+        },
+        {
+          "question": "MIRR differs from IRR because it assumes cash flows are reinvested at:",
+          "options": [
+            "Zero percent",
+            "The inflation rate",
+            "The IRR itself",
+            "The required rate of return"
+          ],
+          "answer": "D",
+          "explanation": "IRR assumes reinvestment at the IRR; MIRR uses the required rate of return."
+        },
+        {
+          "question": "For the project above (NPV GH¢492 on an outlay of GH¢1,000), the profitability index is about:",
+          "options": [
+            "1.49, so accept",
+            "2.49, so reject",
+            "0.49, so reject",
+            "1.00, so indifferent"
+          ],
+          "answer": "A",
+          "explanation": "PI = PV of inflows / initial investment = 1,492 / 1,000 = 1.49. A PI above 1 means accept."
+        }
+      ]
+    },
+    {
+      "id": "BCPC203-Q8",
+      "week": "Weeks 8-9",
+      "title": "Introduction to Risk and Return",
+      "questions": [
+        {
+          "question": "You invest GH¢200 and receive GH¢220 a year later. The holding period return (HPR) is:",
+          "options": [
+            "0.10",
+            "1.20",
+            "1.10",
+            "10"
+          ],
+          "answer": "C",
+          "explanation": "HPR = 220 / 200 = 1.10, and holding period yield (HPY) = HPR - 1 = 10%."
+        },
+        {
+          "question": "Total return on a share equals:",
+          "options": [
+            "Dividend plus capital gain",
+            "Capital gain only",
+            "Dividend minus capital gain",
+            "Share price only"
+          ],
+          "answer": "A",
+          "explanation": "Equity returns come from both dividend yield and capital gains."
+        },
+        {
+          "question": "An investment costs GH¢1,000 and is sold after one year for GH¢1,100 with no dividend. The return is:",
+          "options": [
+            "100%",
+            "10%",
+            "1.1%",
+            "110%"
+          ],
+          "answer": "B",
+          "explanation": "(1,100 - 1,000) / 1,000 = 10%."
+        },
+        {
+          "question": "In finance, risk is:",
+          "options": [
+            "The certainty of earning a fixed return",
+            "The amount invested",
+            "The uncertainty that an investment will earn its expected rate of return",
+            "The inflation rate"
+          ],
+          "answer": "C",
+          "explanation": "The greater the chance of a return far below expected, the greater the risk."
+        },
+        {
+          "question": "The two common measures of stand-alone risk are:",
+          "options": [
+            "Variance and standard deviation",
+            "Payback and NPV",
+            "Mean and median",
+            "Beta and alpha"
+          ],
+          "answer": "A",
+          "explanation": "Both measure dispersion of possible returns around the expected return."
+        },
+        {
+          "question": "The coefficient of variation (CV) is calculated as:",
+          "options": [
+            "Beta divided by variance",
+            "Expected return divided by standard deviation",
+            "Standard deviation divided by expected return",
+            "Variance times expected return"
+          ],
+          "answer": "C",
+          "explanation": "It measures risk per unit of expected return, useful when expected returns differ."
+        },
+        {
+          "question": "An asset returns 20% with probability 0.3, 10% with 0.5 and -5% with 0.2. Its expected return is:",
+          "options": [
+            "15%",
+            "12.5%",
+            "10%",
+            "8.3%"
+          ],
+          "answer": "C",
+          "explanation": "0.3 x 20 + 0.5 x 10 + 0.2 x (-5) = 6 + 5 - 1 = 10%."
+        },
+        {
+          "question": "60% of a portfolio is in a stock expected to return 10% and 40% in one expected to return 15%. The portfolio's expected return is:",
+          "options": [
+            "12%",
+            "10%",
+            "15%",
+            "12.5%"
+          ],
+          "answer": "A",
+          "explanation": "0.6 x 10 + 0.4 x 15 = 12%."
+        },
+        {
+          "question": "The two stocks have standard deviations of 18.2% and 27.3%, and a correlation of 1.0. At 60%/40% weights, portfolio standard deviation is:",
+          "options": [
+            "18.20%",
+            "21.84%",
+            "15.00%",
+            "22.75%"
+          ],
+          "answer": "B",
+          "explanation": "With correlation 1.0 it is the weighted average: 0.6 x 18.2 + 0.4 x 27.3 = 21.84%."
+        },
+        {
+          "question": "According to Markowitz portfolio theory, combining stocks can:",
+          "options": [
+            "Remove all risk including market risk",
+            "Reduce standard deviation below the simple weighted average, because correlation is below 1",
+            "Always increase risk",
+            "Never reduce risk"
+          ],
+          "answer": "B",
+          "explanation": "Correlation coefficients below 1 make diversification benefits possible."
+        }
+      ]
+    },
+    {
+      "id": "BCPC203-Q9",
+      "week": "Week 10",
+      "title": "Cost of Sources of Capital and WACC",
+      "questions": [
+        {
+          "question": "The cost of capital is best described as:",
+          "options": [
+            "The rate of return the firm must pay to satisfy providers of funds, and the cut-off rate for investments",
+            "The firm's profit margin",
+            "The dividend paid last year",
+            "The cost of building a factory"
+          ],
+          "answer": "A",
+          "explanation": "It reflects the riskiness of providing funds."
+        },
+        {
+          "question": "The three components of cost of capital are the costs of:",
+          "options": [
+            "Equity, assets and liabilities",
+            "Ordinary equity, preference shares and debt",
+            "Cash, inventory and receivables",
+            "Sales, profit and tax"
+          ],
+          "answer": "B",
+          "explanation": "These are weighted together to get WACC."
+        },
+        {
+          "question": "A share has a constant dividend of GH¢120 forever and costs GH¢800. The cost of equity is:",
+          "options": [
+            "6.67%",
+            "120%",
+            "9.6%",
+            "15%"
+          ],
+          "answer": "D",
+          "explanation": "Ke = D / P0 = 120 / 800 = 15%."
+        },
+        {
+          "question": "You require 20% on shares of a company that pays a constant GH¢150 dividend. The price you should pay is:",
+          "options": [
+            "GH¢170",
+            "GH¢1,200",
+            "GH¢30",
+            "GH¢750"
+          ],
+          "answer": "D",
+          "explanation": "P0 = D / Ke = 150 / 0.20 = 750."
+        },
+        {
+          "question": "Co. Shalom has just paid a GH¢200 dividend growing at 10% forever. The share price is GH¢1,200. The cost of equity is about:",
+          "options": [
+            "26.7%",
+            "18.3%",
+            "28.3%",
+            "16.7%"
+          ],
+          "answer": "C",
+          "explanation": "Ke = D0(1+g)/P0 + g = 220 / 1,200 + 0.10 = 28.3%."
+        },
+        {
+          "question": "Co. XY will pay GH¢180 next year, growing at 8% forever. The price is GH¢900. Investors' expected return is:",
+          "options": [
+            "12%",
+            "8%",
+            "28%",
+            "20%"
+          ],
+          "answer": "C",
+          "explanation": "Ke = D1 / P0 + g = 180 / 900 + 0.08 = 28%."
+        },
+        {
+          "question": "A share bought 'cum dividend' means the buyer:",
+          "options": [
+            "Is not entitled to the next dividend",
+            "Pays no tax on the dividend",
+            "Must resell the share",
+            "Is entitled to receive the next dividend"
+          ],
+          "answer": "D",
+          "explanation": "Ex dividend means the buyer does not receive the next dividend."
+        },
+        {
+          "question": "A GH¢100 irredeemable debenture pays 10% and trades at GH¢95. Tax is 25%. After-tax cost of debt is about:",
+          "options": [
+            "7.89%",
+            "10.53%",
+            "7.50%",
+            "10.00%"
+          ],
+          "answer": "A",
+          "explanation": "kd = i(1 - t) / P0 = 10 x 0.75 / 95 = 7.89%."
+        },
+        {
+          "question": "The cost of redeemable debt is found as:",
+          "options": [
+            "The dividend yield",
+            "The IRR of the cash flows involved",
+            "The coupon rate only",
+            "The firm's profit margin"
+          ],
+          "answer": "B",
+          "explanation": "It can be found by linear interpolation between two NPVs."
+        },
+        {
+          "question": "A firm has equity of GH¢600 costing 20% and after-tax debt of GH¢400 costing 10%. Its WACC is:",
+          "options": [
+            "14%",
+            "16%",
+            "18%",
+            "15%"
+          ],
+          "answer": "B",
+          "explanation": "(600 x 0.20 + 400 x 0.10) / 1,000 = 16%."
+        },
+        {
+          "question": "WACC is often used as:",
+          "options": [
+            "The dividend payout ratio",
+            "The tax rate",
+            "The discount rate when evaluating investments",
+            "The inflation rate"
+          ],
+          "answer": "C",
+          "explanation": "Projects with a positive NPV at the WACC add value. Market values are preferred to book values for the weights."
+        }
+      ]
+    },
+    {
+      "id": "BCPC203-Q10",
+      "week": "Week 11",
+      "title": "Introduction to Dividend Policy",
+      "questions": [
+        {
+          "question": "Which statement about retained earnings is correct?",
+          "options": [
+            "They are a form of debt",
+            "They belong to creditors",
+            "They are free of any cost",
+            "They are not a free source of finance because they carry an opportunity cost"
+          ],
+          "answer": "D",
+          "explanation": "Shareholders could have invested the dividends elsewhere to earn a return."
+        },
+        {
+          "question": "An advantage of using retained earnings is that:",
+          "options": [
+            "They change the pattern of shareholdings",
+            "There are no issue costs and no dilution of control",
+            "They require a prospectus",
+            "They always increase dividends"
+          ],
+          "answer": "B",
+          "explanation": "Retained earnings are also a flexible source of finance."
+        },
+        {
+          "question": "The residual theory says a firm should:",
+          "options": [
+            "Pay a constant payout ratio",
+            "Never pay dividends",
+            "Finance all positive-NPV projects first and pay dividends from what is left",
+            "Pay dividends first, then invest"
+          ],
+          "answer": "C",
+          "explanation": "External funds are expensive, so retained earnings come first."
+        },
+        {
+          "question": "M&M's dividend irrelevance theory assumes:",
+          "options": [
+            "No tax, no transaction costs and a perfect market",
+            "High taxes on dividends",
+            "High transaction costs",
+            "Imperfect information"
+          ],
+          "answer": "A",
+          "explanation": "Under those conditions shareholders are indifferent between dividends and capital gains."
+        },
+        {
+          "question": "The signalling effect means that a dividend cut may suggest:",
+          "options": [
+            "The company has cash flow problems",
+            "The company will issue bonds",
+            "Shares are overvalued",
+            "The company is highly profitable"
+          ],
+          "answer": "A",
+          "explanation": "This is part of the traditional view that dividend policy matters."
+        },
+        {
+          "question": "The clientele effect is where:",
+          "options": [
+            "Managers choose their shareholders",
+            "All shareholders dislike dividends",
+            "Some shareholders prefer dividends and so buy shares of firms that pay them",
+            "Dividends are paid in shares"
+          ],
+          "answer": "C",
+          "explanation": "Different groups of investors are attracted by different dividend policies."
+        },
+        {
+          "question": "A constant payout ratio policy means the firm pays:",
+          "options": [
+            "A fixed percentage of net income as dividend, such as 40%",
+            "Dividends only after investing",
+            "No dividend",
+            "A fixed cedi amount every year"
+          ],
+          "answer": "A",
+          "explanation": "Dividends then rise and fall with earnings."
+        },
+        {
+          "question": "A stable dividend policy is where the firm pays:",
+          "options": [
+            "A varying percentage of net income",
+            "Nothing",
+            "A stable amount as dividend without variations",
+            "Only scrip dividends"
+          ],
+          "answer": "C",
+          "explanation": "This contrasts with the constant payout ratio policy."
+        },
+        {
+          "question": "A zero dividend policy assumes that earnings are:",
+          "options": [
+            "Paid out in full",
+            "Used to repay shareholders' loans",
+            "Held as idle cash forever",
+            "Reinvested in viable projects to raise the share price in the long run"
+          ],
+          "answer": "D",
+          "explanation": "No dividend is paid."
+        },
+        {
+          "question": "A scrip dividend is a dividend paid:",
+          "options": [
+            "By repurchasing debt",
+            "From the share premium account only",
+            "In foreign currency",
+            "By issuing additional company shares instead of cash"
+          ],
+          "answer": "D",
+          "explanation": "Share repurchase is a different route, where the company buys back its own shares."
+        }
+      ]
+    }
+  ]
+}
